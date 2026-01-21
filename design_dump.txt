@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elite RBA | Commercial Services Redefined</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0A2463",
+                        "accent-blue": "#3E92CC",
+                        "rba-dark": "#050505",
+                        "rba-gray": "#F8F9FA",
+                    },
+                    fontFamily: {
+                        "sans": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Instrument Serif", "serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply font-sans antialiased text-rba-dark bg-white;
+            }
+            .italic-serif {
+                @apply font-serif italic;
+            }
+        }
+        .marquee-container {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 4rem;
+        }
+        .marquee-content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            min-width: 100%;
+            gap: 4rem;
+            animation: scroll 40s linear infinite;
+        }
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="selection:bg-primary selection:text-white">
+<header class="fixed top-0 w-full z-50 mix-blend-difference px-8 py-6">
+<div class="max-w-[1800px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="text-white">
+<svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold tracking-tighter uppercase">Elite RBA</h2>
+</div>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-white text-[11px] font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity" href="#">Services</a>
+<a class="text-white text-[11px] font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity" href="#">Experience</a>
+<a class="text-white text-[11px] font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity" href="#">Philosophy</a>
+<a class="text-white text-[11px] font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity" href="#">Contact</a>
+</nav>
+<div>
+<button class="bg-white text-black px-6 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider hover:bg-opacity-90 transition-all">
+                    Inquire
+                </button>
+</div>
+</div>
+</header>
+<main>
+<section class="relative h-screen flex items-center justify-center overflow-hidden bg-rba-dark">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<img alt="Hero background" class="w-full h-full object-cover scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK8Nq0tzc8OWFaY7HydtM3q1satiymUX_VyNSB4O2piFRKz5rlr8oap51qMauHzmHl3bxA5nffNaJ0H1yKRcBMIOHf33EbZ1vHpLO81Y682h6_jV3XynCTev7RoJnGq6OgPvxFYfdr1tLKJRhRbGk-Nbih_mhmKo8mv2xNu4tb1qf8GIn48mC4rM8Px9aTAq6ND6rfGixq__-BVXALl_Mymchai6ZP--Id0polwjrh03BNTZMov9h_Jw72H8RfwPg1Wt2x08RsrII"/>
+</div>
+<div class="relative z-20 text-center px-6">
+<span class="inline-block text-white/70 text-[11px] font-bold uppercase tracking-[0.4em] mb-8">Pinnacle of Cleanliness</span>
+<h1 class="text-white text-7xl md:text-[9rem] font-extrabold leading-[0.85] tracking-tighter mb-8">
+                    PRISTINE <br/>
+<span class="italic-serif font-light lowercase">Spaces.</span>
+</h1>
+<p class="text-white/80 text-lg md:text-xl font-light max-w-xl mx-auto leading-relaxed mb-12">
+                    Redefining commercial hygiene through architectural precision and sustainable luxury.
+                </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="group relative flex items-center gap-3 bg-white text-black px-10 py-5 rounded-full text-xs font-bold uppercase tracking-widest overflow-hidden transition-all">
+<span class="relative z-10">Get a Free Quote</span>
+<span class="material-symbols-outlined relative z-10 text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-20">
+<div class="flex flex-col items-center gap-4">
+<div class="w-px h-16 bg-gradient-to-b from-white to-transparent"></div>
+<span class="text-white/40 text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white border-y border-gray-100 overflow-hidden">
+<div class="max-w-[1800px] mx-auto px-8 mb-12">
+<span class="text-[11px] font-bold text-gray-400 uppercase tracking-[0.3em]">Trusted By Industry Leaders</span>
+</div>
+<div class="marquee-container">
+<div class="marquee-content">
+<div class="flex items-center gap-4 text-3xl font-bold text-black/10 grayscale"><span class="material-symbols-outlined text-4xl">corporate_fare</span> GLOBALCORP</div>
+<div class="flex items-center gap-4 text-3xl font-bold text-black/10 grayscale"><span class="material-symbols-outlined text-4xl">apartment</span> NEXUS IND.</div>
+<div class="flex items-center gap-4 text-3xl font-bold text-black/10 grayscale"><span class="material-symbols-outlined text-4xl">factory</span> CAN-STEEL</div>
+<div class="flex items-center gap-4 text-3xl font-bold text-black/10 grayscale"><span class="material-symbols-outlined text-4xl">store</span> RETAIL HUB</div>
+<div class="flex items-center gap-4 text-3xl font-bold text-black/10 grayscale"><span class="material-symbols-outlined text-4xl">health_and_safety</span> HEALTHPLUS</div>
+</div>
+<div aria-hidden="true" class="marquee-content">
+<div class="flex items-center gap-4 text-3xl font-bold text-black/10 grayscale"><span class="material-symbols-outlined text-4xl">corporate_fare</span> GLOBALCORP</div>
+<div class="flex items-center gap-4 text-3xl font-bold text-black/10 grayscale"><span class="material-symbols-outlined text-4xl">apartment</span> NEXUS IND.</div>
+<div class="flex items-center gap-4 text-3xl font-bold text-black/10 grayscale"><span class="material-symbols-outlined text-4xl">factory</span> CAN-STEEL</div>
+<div class="flex items-center gap-4 text-3xl font-bold text-black/10 grayscale"><span class="material-symbols-outlined text-4xl">store</span> RETAIL HUB</div>
+<div class="flex items-center gap-4 text-3xl font-bold text-black/10 grayscale"><span class="material-symbols-outlined text-4xl">health_and_safety</span> HEALTHPLUS</div>
+</div>
+</div>
+</section>
+<section class="py-40 px-8 bg-rba-gray">
+<div class="max-w-[1400px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start mb-32">
+<div>
+<span class="text-primary text-[11px] font-bold uppercase tracking-[0.4em] mb-8 block">The RBA Advantage</span>
+<h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[0.9] text-black">
+                            WE DELIVER <br/>
+<span class="italic-serif font-light">Consistency.</span>
+</h2>
+</div>
+<div class="pt-8">
+<p class="text-xl text-gray-500 font-light leading-relaxed max-w-lg">
+                            Our team combines decades of experience with cutting-edge green technology to maintain your professional environment with obsessive attention to detail.
+                        </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200">
+<div class="bg-rba-gray p-12 group hover:bg-white transition-colors duration-500">
+<div class="mb-12">
+<span class="material-symbols-outlined text-4xl font-extralight text-primary group-hover:scale-110 transition-transform duration-500">energy_savings_leaf</span>
+</div>
+<h4 class="text-2xl font-bold mb-6 tracking-tight">Eco-Certified</h4>
+<p class="text-gray-500 leading-relaxed font-light">Exclusively green-certified chemicals and sustainable methods for a healthier workspace.</p>
+</div>
+<div class="bg-rba-gray p-12 group hover:bg-white transition-colors duration-500">
+<div class="mb-12">
+<span class="material-symbols-outlined text-4xl font-extralight text-primary group-hover:scale-110 transition-transform duration-500">support_agent</span>
+</div>
+<h4 class="text-2xl font-bold mb-6 tracking-tight">24/7 Priority</h4>
+<p class="text-gray-500 leading-relaxed font-light">Rapid response team available around the clock to handle emergencies without downtime.</p>
+</div>
+<div class="bg-rba-gray p-12 group hover:bg-white transition-colors duration-500">
+<div class="mb-12">
+<span class="material-symbols-outlined text-4xl font-extralight text-primary group-hover:scale-110 transition-transform duration-500">verified_user</span>
+</div>
+<h4 class="text-2xl font-bold mb-6 tracking-tight">Expert Staff</h4>
+<p class="text-gray-500 leading-relaxed font-light">Rigorous background checks and continuous training for high-security requirements.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="relative bg-rba-dark py-40 px-8">
+<div class="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-24 items-center">
+<div class="lg:w-1/2 space-y-12">
+<span class="text-white/40 text-[11px] font-bold uppercase tracking-[0.4em]">Next Steps</span>
+<h2 class="text-5xl md:text-7xl font-extrabold text-white tracking-tighter leading-[0.9]">
+                        READY FOR A <br/>
+<span class="italic-serif font-light text-accent-blue">Clean</span> START?
+                    </h2>
+<p class="text-white/60 text-xl font-light leading-relaxed max-w-md">
+                        Speak with a facilities specialist today. We offer competitive pricing and flexible schedules across Canada.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-white/10">
+<div>
+<span class="block text-[10px] text-white/40 uppercase tracking-widest mb-2">Call Us</span>
+<span class="text-white text-lg font-bold">1-800-RBA-CLEAN</span>
+</div>
+<div>
+<span class="block text-[10px] text-white/40 uppercase tracking-widest mb-2">Email Us</span>
+<span class="text-white text-lg font-bold">contact@rbacommercialservices.com</span>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 w-full max-w-xl">
+<div class="bg-[#111111] p-12 rounded-2xl border border-white/5 shadow-2xl">
+<h3 class="text-white text-2xl font-bold mb-10 tracking-tight">Request a Callback</h3>
+<form action="#" class="space-y-8">
+<div class="relative group">
+<label class="block text-[10px] text-white/40 uppercase tracking-widest mb-2 group-focus-within:text-accent-blue transition-colors">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-white/10 focus:ring-0 focus:border-accent-blue text-white py-3 px-0 transition-all placeholder:text-white/10" placeholder="Type your name..." type="text"/>
+</div>
+<div class="relative group">
+<label class="block text-[10px] text-white/40 uppercase tracking-widest mb-2 group-focus-within:text-accent-blue transition-colors">Company Email</label>
+<input class="w-full bg-transparent border-0 border-b border-white/10 focus:ring-0 focus:border-accent-blue text-white py-3 px-0 transition-all placeholder:text-white/10" placeholder="your@email.com" type="email"/>
+</div>
+<div class="relative group">
+<label class="block text-[10px] text-white/40 uppercase tracking-widest mb-2 group-focus-within:text-accent-blue transition-colors">Facility Type</label>
+<select class="w-full bg-transparent border-0 border-b border-white/10 focus:ring-0 focus:border-accent-blue text-white py-3 px-0 transition-all appearance-none">
+<option class="bg-rba-dark">Office Building</option>
+<option class="bg-rba-dark">Industrial/Warehouse</option>
+<option class="bg-rba-dark">Healthcare/Clinic</option>
+<option class="bg-rba-dark">Retail Store</option>
+</select>
+</div>
+<button class="w-full bg-white text-black py-6 rounded-full font-bold uppercase text-[11px] tracking-[0.2em] hover:bg-accent-blue hover:text-white transition-all duration-500 mt-10">
+                                Send Request
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white py-24 px-8 border-t border-gray-100">
+<div class="max-w-[1400px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
+<div class="space-y-8">
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<svg class="size-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tighter uppercase">Elite RBA</h2>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed font-light">
+                        Canada's choice for eco-conscious commercial cleaning. Excellence in every corner, reliability in every visit.
+                    </p>
+</div>
+<div class="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-8">
+<div>
+<h4 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-8 text-black">Services</h4>
+<ul class="space-y-4 text-sm text-gray-500 font-light">
+<li><a class="hover:text-primary transition-colors" href="#">Janitorial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Disinfection</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Window Cleaning</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Floor Care</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-8 text-black">Company</h4>
+<ul class="space-y-4 text-sm text-gray-500 font-light">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Philosophy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div>
+<h4 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-8 text-black">Compliance</h4>
+<div class="flex flex-wrap gap-6 opacity-30 grayscale">
+<span class="material-symbols-outlined text-3xl">energy_savings_leaf</span>
+<span class="material-symbols-outlined text-3xl">eco</span>
+<span class="material-symbols-outlined text-3xl">security</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 pt-12 border-t border-gray-100">
+<p class="text-[10px] text-gray-400 uppercase tracking-widest">© 2024 RBA Commercial Services Inc. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="text-[10px] text-gray-400 uppercase tracking-widest hover:text-black transition-colors" href="#">Privacy</a>
+<a class="text-[10px] text-gray-400 uppercase tracking-widest hover:text-black transition-colors" href="#">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html><!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elite Heritage | RBA Commercial Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #135bec;
+            --background: #fdfdfd;
+            --dark: #0a0a0a;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--background);
+            color: var(--dark);
+        }
+        .serif-display {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .text-huge {
+            font-size: clamp(3.5rem, 8vw, 7.5rem);
+            line-height: 0.9;
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#135bec",
+              },
+            },
+          },
+        }
+    </script>
+</head>
+<body class="antialiased selection:bg-primary selection:text-white">
+<header class="fixed top-0 left-0 w-full z-[100] px-6 py-8 md:px-12 mix-blend-difference pointer-events-none">
+<div class="max-w-[1800px] mx-auto flex justify-between items-center w-full pointer-events-auto">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+<div class="w-4 h-4 bg-black rotate-45"></div>
+</div>
+<span class="text-white text-lg font-bold tracking-tighter uppercase">RBA Elite</span>
+</div>
+<nav class="hidden md:flex gap-12 text-white/90 text-[11px] font-bold uppercase tracking-[0.2em]">
+<a class="hover:text-primary transition-colors" href="#">Surface Care</a>
+<a class="hover:text-primary transition-colors" href="#">Our Ethos</a>
+<a class="hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="hover:text-primary transition-colors" href="#">Connect</a>
+</nav>
+<div class="text-white">
+<button class="px-6 py-2 border border-white/30 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">
+                    Inquire
+                </button>
+</div>
+</div>
+</header>
+<main>
+<section class="min-h-screen flex flex-col justify-end px-6 md:px-12 pb-24 pt-40">
+<div class="max-w-[1800px] mx-auto w-full">
+<div class="mb-12">
+<span class="text-sm font-bold uppercase tracking-[0.3em] text-primary mb-6 block">Established Heritage</span>
+<h1 class="serif-display text-huge font-light tracking-tight">
+                        Purity <span class="italic font-medium">in</span> Performance. <br/>
+                        Elite <span class="italic font-medium text-primary">Commercial</span> Care.
+                    </h1>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-end gap-8">
+<p class="max-w-xl text-xl md:text-2xl font-light text-gray-500 leading-relaxed">
+                        Redefining the standard of Canadian commercial environments through architectural precision and meticulous sanitation.
+                    </p>
+<div class="flex gap-4">
+<div class="w-20 h-20 rounded-full border border-gray-200 flex items-center justify-center group cursor-pointer hover:border-primary transition-all">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-primary group-hover:rotate-45 transition-all">arrow_downward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-[#fafafa]">
+<div class="max-w-[1800px] mx-auto">
+<div class="asymmetric-grid">
+<div class="col-span-12 md:col-span-4 flex flex-col justify-center mb-12 md:mb-0">
+<h2 class="serif-display text-5xl italic mb-8">The Legacy</h2>
+<p class="text-gray-600 leading-relaxed mb-6">
+                            Founded on the principle that a clean environment is the foundation of corporate excellence, RBA Commercial Services has evolved from a boutique operation into Canada's premier architectural cleaning partner.
+                        </p>
+<p class="text-gray-600 leading-relaxed">
+                            We don't just clean; we preserve the integrity of your professional space, ensuring every glass pane and marble floor reflects your company's ambition.
+                        </p>
+</div>
+<div class="col-span-12 md:col-span-8">
+<div class="aspect-[16/9] bg-gray-200 overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl shadow-black/5">
+<img alt="Modern Architecture" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLWy4w4KYQwvNoK36a7EhHJuldvucjalOn3v8hjPxexVEK2PTMZnlvV1hhZ9Yvqz_sbV4zrf_hjDWj4khox2MrECed9nVgzvF5xgqoIVFFD1kVsxTjNL4qColB-un9f106d-UiFQcjsCKoPot_XyM4VMZBPJNJDFlr1I4djddul1V2C6XFhThAmThEYU5YYJytHcyWMXM5LVHWw8GcEFeYRklzZa4iyGHbPhnpRpWJu47MuNsV-xN5BwTr_Vgv9ZgSgikOluZGHoo"/>
+</div>
+</div>
+<div class="col-span-12 md:col-span-7 mt-0 md:mt-24">
+<div class="aspect-[4/3] bg-gray-200 overflow-hidden rounded-sm shadow-xl">
+<img alt="Professional Crew" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqwhUdD0yaYBDstg2IicYvgpwJh3ITdn3OyGzqXSPHuH72BkqF3vSlSuzJT2JdXxBl64PmZwKmE3NJKYi-C3Wc4ivRu7Keb-9Gks7Th2HTmo390HcdaHJH1Prwwc0zD2Lkf5F-1HX-XN7lZDS5f8qnO7Il5lyP740Cd7lpV2q3zaOZDJ3w1QjuiUqbNmfOA2SB0Mf90FR1lm3b8rF-Muf1SOA0qR2256CISwe_qtkqEU9DqHA5d1nPJfEA18kFq_fDIWOFy6wyp7s"/>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 md:mt-48 flex flex-col justify-start">
+<div class="pl-0 md:pl-12 border-l-0 md:border-l border-gray-200">
+<h3 class="serif-display text-4xl mb-6">Uncompromising <span class="italic font-medium">Standards</span></h3>
+<p class="text-gray-500 text-lg leading-relaxed italic mb-8">"Excellence is not an act, but a habit. We curate environments where your team can thrive without distraction."</p>
+<div class="aspect-square w-full bg-gray-100 rounded-sm overflow-hidden">
+<img alt="Details" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcaC5wPpkj_5Br2xKH7ih30-sRMig0X2NLyRNf_bBFhpIjq2gLCB6ojWA-Z7Qtk44j3YS5Zz3uT_JEPtdMSB9oBMa0CZbwAzyQcgYRVUAmUoss52Yy1n3K_DcaDjDFlsD7rKy22U_L1cmRZO4YWVsjY1LHIENdfW-1RPQeseI01HMREjuHxl7Us59_pe-iAHe9OJDyJKJAsI3uOg8_0Ak7chucoz6eu5SpUA_OAIOgtDMKu4VgXJ5WkrWkvW5noJEL2aeIF17s_yo"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-40 px-6 md:px-12 bg-white">
+<div class="max-w-[1800px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-32 border-b border-gray-100 pb-12">
+<h2 class="serif-display text-6xl italic">The Elite Difference</h2>
+<span class="text-xs font-bold uppercase tracking-widest text-gray-400 mt-4 md:mt-0">Core Values 01—04</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 md:gap-8">
+<div class="group">
+<span class="block text-[80px] font-thin serif-display leading-none mb-8 text-gray-100 group-hover:text-primary transition-colors duration-500 italic">01.</span>
+<h4 class="text-sm font-bold uppercase tracking-widest mb-4">Unyielding Reliability</h4>
+<p class="text-gray-500 font-light leading-relaxed">Punctual execution and consistent high-tier performance, scheduled precisely around your operational hours.</p>
+</div>
+<div class="group">
+<span class="block text-[80px] font-thin serif-display leading-none mb-8 text-gray-100 group-hover:text-primary transition-colors duration-500 italic">02.</span>
+<h4 class="text-sm font-bold uppercase tracking-widest mb-4">Detail Precision</h4>
+<p class="text-gray-500 font-light leading-relaxed">A microscopic approach to cleanliness, where no corner is overlooked and every texture is treated with specialized care.</p>
+</div>
+<div class="group">
+<span class="block text-[80px] font-thin serif-display leading-none mb-8 text-gray-100 group-hover:text-primary transition-colors duration-500 italic">03.</span>
+<h4 class="text-sm font-bold uppercase tracking-widest mb-4">Conscious Ecology</h4>
+<p class="text-gray-500 font-light leading-relaxed">Utilizing advanced biodegradable solutions that prioritize the respiratory health of your workforce and the planet.</p>
+</div>
+<div class="group">
+<span class="block text-[80px] font-thin serif-display leading-none mb-8 text-gray-100 group-hover:text-primary transition-colors duration-500 italic">04.</span>
+<h4 class="text-sm font-bold uppercase tracking-widest mb-4">Total Assurance</h4>
+<p class="text-gray-500 font-light leading-relaxed">Comprehensive liability coverage and rigorous staff vetting, providing absolute peace of mind for high-security environments.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-40 px-6 md:px-12 bg-[#0a0a0a] text-white">
+<div class="max-w-[1800px] mx-auto">
+<div class="mb-32 max-w-2xl">
+<span class="text-primary font-bold tracking-[0.3em] uppercase text-xs mb-6 block">The Curators</span>
+<h2 class="serif-display text-7xl font-light italic leading-tight">Visionary leadership behind <span class="text-white/50">every pristine surface.</span></h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-4 items-start">
+<div class="md:col-span-4 group">
+<div class="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700 mb-8">
+<img alt="CEO" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBms1JA2h65DjrOrx3vnbTzxak201_Izl86MSzdWHoiG0-PMf79pJkn5tD9MehBee-F8kbAFq8557ka6Bej_TDtiYRzpYvWO9Cdw1hIAnOfbsp9yP-36qNa8WK6am7iTJ5dJUEHOfnPecP8EDWmuIi4wI6yV-Ba7GJMOz-4kPw5oA9pMXwpGMRQauwS5CaD17RpXJD_2KtecdfME4rVlwyZ0RK5CvRH46E6RZ0fNEaEaOJNCz0EVKRAX_0SkaaZjKSXbzIDx-lgfrU"/>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<h4 class="serif-display text-3xl font-light italic">Michael Rossi</h4>
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500 mt-2">Founder &amp; CEO</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 md:mt-32 group">
+<div class="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700 mb-8">
+<img alt="COO" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFeTu0xGp06Nx6cl2oPphcTHJZNBeeYI06nlTVujBkR5EdvOSxdkwOvN6H3QUx0280_AaKOJ5XiVZg_orDIsFLZFysYvuaFXSeWpQogN4uQ22wnWTH-aw3WmI5lSnS1l5h7NXM1ikrlL1CDvB-lH_EJHpv-0idW06k-O0dVUuBukHANJQNawxbOJ1SH81f4Wn9msOpSCfpn0nmD9PDY6TKv7dJQdnfgMifNId7VK5gpYW0slrKqohv_VWeJWnbzVsn8aIPodHhT6U"/>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<h4 class="serif-display text-3xl font-light italic">Sarah Jenkins</h4>
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500 mt-2">Operations Director</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 md:mt-64 group">
+<div class="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700 mb-8">
+<img alt="Quality" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMY9ivN5ibes1RABQlSTqxP-y2d3tOxbIEXqXdzoqPA_J7SQAYb4OrqVRsMdy_eNNtQR3LZtoDSwRw1Dfw20mIxcJcFiTgssSWYrO88PhL4GyXl1kxqBckM9Ouh3LQXk5ZiKLE0YB5HdgUI183RmgMlpHsVeWvVdRwpenMm480cz99i3Q9NPnsAh2KfllbCoMRTLc-V63iLLu09j6-Sv0HXwFyGedI1dCLSgu5Zc501QpCFxD-vl6F0EZHdyRa3CfHNc_Sc5G6B-k"/>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<h4 class="serif-display text-3xl font-light italic">David Park</h4>
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500 mt-2">Head of Quality</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-primary text-white py-32 px-6 md:px-12 relative overflow-hidden">
+<div class="max-w-[1800px] mx-auto relative z-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-12">
+<div>
+<h2 class="serif-display text-6xl md:text-8xl italic font-light mb-6">Ready for <span class="text-white/40">the elite?</span></h2>
+<p class="text-xl md:text-2xl font-light opacity-80 max-w-xl">Join the roster of Canada's most prestigious corporate environments.</p>
+</div>
+<button class="bg-white text-primary px-12 py-6 rounded-full text-sm font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl">
+                    Request a Proposal
+                </button>
+</div>
+<div class="absolute top-0 right-0 w-[50%] h-full bg-white/5 -skew-x-12 translate-x-1/2"></div>
+</section>
+</main>
+<footer class="bg-black text-white/40 py-24 px-6 md:px-12 border-t border-white/5">
+<div class="max-w-[1800px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-4 mb-24">
+<div class="md:col-span-6">
+<div class="flex items-center gap-2 mb-8">
+<div class="w-6 h-6 bg-primary rounded-full"></div>
+<span class="text-white text-lg font-bold tracking-tighter uppercase">RBA Elite</span>
+</div>
+<p class="max-w-xs text-sm leading-relaxed mb-8">
+                        Setting the gold standard for commercial cleaning services across Canada since 2012. Architectural preservation for the modern workspace.
+                    </p>
+<div class="flex gap-6 text-white text-xs font-bold uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="#">Behance</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h5 class="text-white text-[10px] font-bold uppercase tracking-[0.3em] mb-8">Services</h5>
+<ul class="flex flex-col gap-4 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">Office Curation</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Industrial Health</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Post-Architectural</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Eco-Protocols</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h5 class="text-white text-[10px] font-bold uppercase tracking-[0.3em] mb-8">Company</h5>
+<ul class="flex flex-col gap-4 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">The Ethos</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Press Room</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Legal</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h5 class="text-white text-[10px] font-bold uppercase tracking-[0.3em] mb-8">Headquarters</h5>
+<p class="text-sm leading-relaxed">
+                        Toronto, Ontario<br/>
+                        Support: 1-800-RBA-ELITE<br/>
+                        24/7 Operations
+                    </p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center border-t border-white/5 pt-12 text-[10px] font-bold uppercase tracking-widest">
+<p>© 2024 RBA Commercial Services. All Rights Reserved.</p>
+<p class="mt-4 md:mt-0">Crafted for Excellence.</p>
+</div>
+</div>
+</footer>
+
+</body></html><!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elite Services Showcase - RBA Commercial Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@200;300;400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "accent-green": "#22c55e",
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#0a0a0a",
+                        "elite-black": "#0f0f0f",
+                    },
+                    fontFamily: {
+                        "sans": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif-italic": ["Cormorant Garamond", "serif"],
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-light text-slate-900 font-sans antialiased;
+            }
+        }
+        .serif-italic {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+        .service-card {
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .service-card:hover img {
+            transform: scale(1.05);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<header class="fixed top-0 z-50 w-full glass-nav border-b border-slate-200/50 dark:border-white/10">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+<div class="flex h-20 items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl text-primary">diamond</span>
+<h1 class="text-xl font-extrabold tracking-tighter uppercase">RBA <span class="text-primary">Commercial</span></h1>
+</div>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-xs font-bold tracking-[0.2em] uppercase hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-xs font-bold tracking-[0.2em] uppercase text-primary transition-colors" href="#">Services</a>
+<a class="text-xs font-bold tracking-[0.2em] uppercase hover:text-primary transition-colors" href="#">Philosophy</a>
+<a class="text-xs font-bold tracking-[0.2em] uppercase hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center">
+<button class="bg-elite-black text-white dark:bg-white dark:text-black px-8 py-3 text-[10px] font-bold tracking-widest uppercase hover:bg-primary transition-all">
+                    Inquire
+                </button>
+</div>
+</div>
+</div>
+</header>
+<section class="pt-40 pb-20 px-6 lg:px-12 max-w-[1440px] mx-auto">
+<div class="max-w-4xl">
+<span class="inline-block text-xs font-bold tracking-[0.3em] uppercase text-primary mb-6">Unrivaled Standards</span>
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-none mb-8">
+            The <span class="serif-italic font-normal lowercase">Elite</span> <br/>Portfolio
+        </h1>
+<p class="text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-light max-w-2xl leading-relaxed">
+            Meticulous commercial cleaning solutions designed for institutions that demand <span class="text-slate-900 dark:text-white font-medium">perfection</span> in every square inch.
+        </p>
+</div>
+</section>
+<main class="max-w-[1440px] mx-auto px-6 lg:px-12 pb-32">
+<div class="asymmetric-grid">
+<div class="col-span-12 lg:col-span-8 group relative overflow-hidden bg-white">
+<div class="aspect-[16/9] overflow-hidden">
+<img alt="Elite Office" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfaBH_VUYvCz6CcffGgf0Z0nKIQj7UGOdy4Ud6HztyHx0SMQ0_4yIuoJtR95lpH7498fs0KNon2zagUMuhh_XOqah4yJuYRI-hEUqa6Z2u_9YrcqN3TQI7fLbqGm-YFth_OdVNiqE5rwSnGOmmbDgoWam3GAN8bRr4zrlbM7vYeNFsRxpLbpryaaG5dFwmNntyNio5TrU8ah3hEowgYgLbdYj9CtZi0p32BRFpmZ_SRbZX-ceh0gImnTTiFwhdtEtNRKeTqY3eqFk"/>
+</div>
+<div class="p-8 lg:p-12 flex flex-col md:flex-row md:items-end justify-between border-b border-x border-slate-100">
+<div>
+<span class="text-[10px] font-bold tracking-[0.3em] uppercase text-slate-400">01</span>
+<h3 class="text-4xl font-extrabold tracking-tighter mt-2">OFFICE ENVIRONMENTS</h3>
+<p class="text-slate-500 mt-4 max-w-sm text-sm">Corporate headquarters and boutique workspaces maintained with surgical precision.</p>
+</div>
+<a class="mt-6 md:mt-0 flex items-center gap-2 group/link" href="#">
+<span class="text-xs font-bold tracking-widest uppercase">Explore Details</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4 group relative bg-white">
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Medical Sanitation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm12z_pZp17QqMyi0CVw2wbf-hABg59GzkbJvxom-X03H5oCmvRs9n4obZ4I_tRNks0qfOppNyIeM_g6bJRL0GNiGWG_8qofb-IWtSFiG712cr820RjnNaJbMI7It25HqEHWwRBSsF37SMDiU7lFNfjpvC1exfT14L9Xuj1U2AV9fcNsU4s2K-xUV0NSUMuQoIuO1MZQyfxdAsw-Rjl7iRkqul2ChoKBos9FDeqKwpBnzRoVD-KC2ftXkBrVn51n5_lZglgFPzwgE"/>
+</div>
+<div class="p-8 border-b border-x border-slate-100 h-full">
+<span class="text-[10px] font-bold tracking-[0.3em] uppercase text-slate-400">02</span>
+<h3 class="text-3xl font-extrabold tracking-tighter mt-2 leading-none uppercase">Clinical <br/><span class="serif-italic font-normal lowercase">Sanitation</span></h3>
+<p class="text-slate-500 mt-4 text-sm">Certified medical-grade disinfection for high-stakes healthcare facilities.</p>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 group relative bg-white lg:mt-[-4rem]">
+<div class="aspect-square overflow-hidden">
+<img alt="Retail Spaces" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq5J8y21J9Wr5bpt0Fjx6MaVPzPBxFPTmMBSy2i9C4D_Ii1hsXb12t6IgF8UHF9S-1Klv0AgcfxagFRWz7c9b8Q1V3iDOWXHWKu1XuiPv0nQbNeFvKs22yheSFJd9a0XnRM_KJbtFw9YVKZu9SuOh9tfcD6IPtHnz0FV-u-76-uMcNxVXo-d1LeewbYc_Iwt3ki19zYV_etvnnK-YcnFl2-v1SUsD0kv-2UqdVVKiG5RCtAKvbpHjX1G2YwW5OzBjXdB_cN6GI6kg"/>
+</div>
+<div class="p-8 border-b border-x border-slate-100">
+<span class="text-[10px] font-bold tracking-[0.3em] uppercase text-slate-400">03</span>
+<h3 class="text-3xl font-extrabold tracking-tighter mt-2 uppercase">RETAIL LUXE</h3>
+<p class="text-slate-500 mt-4 text-sm">White-glove service for luxury storefronts and high-traffic shopping centers.</p>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-7 group relative bg-white">
+<div class="aspect-[21/9] overflow-hidden">
+<img alt="Post Construction" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzsrcpoqq8WvzHCEaLE6eESb6fXlMH5wgkvExy18obQAq-h841I1ReBRKL7Y50eq9bLhL7PmOdpc1TbQEiQ72lTDM1dGeL5kICuQWaHpwKks7Z2LjQYGtgkeOZyuZ1AiDyNjNgPNm7cNVdmUQWDAHkAS7prwxdyFuF1AHWziR4oL-5x4l1Rvdj18FsO_OOxTNj8psro4kubjwWtciUrzCuAf2WYftSP36VrQ5MtV6FowX0V_ilz12ol4F5TrEZte6WAuHKvWOWAeQ"/>
+</div>
+<div class="p-8 border-b border-x border-slate-100 flex flex-col justify-center">
+<span class="text-[10px] font-bold tracking-[0.3em] uppercase text-slate-400">04</span>
+<h3 class="text-4xl font-extrabold tracking-tighter mt-2 uppercase">Post-Build <span class="serif-italic font-normal lowercase italic text-primary">Finality</span></h3>
+<p class="text-slate-500 mt-4 text-sm max-w-md">Transforming construction sites into pristine, ready-for-market properties.</p>
+</div>
+</div>
+</div>
+</main>
+<section class="bg-white dark:bg-elite-black py-32 border-y border-slate-100 dark:border-white/5">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+<div class="flex flex-col border-l border-slate-200 dark:border-white/10 pl-8">
+<div class="text-[120px] font-extrabold tracking-tighter leading-none text-primary mb-4">100</div>
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-slate-400">Percent Certified Green</div>
+<p class="text-sm mt-4 text-slate-500 dark:text-slate-400">Eco-conscious methodologies integrated into every cleaning protocol.</p>
+</div>
+<div class="flex flex-col border-l border-slate-200 dark:border-white/10 pl-8">
+<div class="text-[120px] font-extrabold tracking-tighter leading-none text-slate-900 dark:text-white mb-4">0<span class="text-primary italic font-serif-italic">.</span>2</div>
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-slate-400">Avg. Response Hour</div>
+<p class="text-sm mt-4 text-slate-500 dark:text-slate-400">Industry-leading agility in client communication and rapid deployment.</p>
+</div>
+<div class="flex flex-col border-l border-slate-200 dark:border-white/10 pl-8">
+<div class="text-[120px] font-extrabold tracking-tighter leading-none text-slate-900 dark:text-white mb-4">24</div>
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-slate-400">Seven Client Support</div>
+<p class="text-sm mt-4 text-slate-500 dark:text-slate-400">Constant vigilance to ensure your workspace remains flawless at all times.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-background-dark py-40">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+<div class="bg-elite-black text-white p-12 lg:p-24 relative overflow-hidden flex flex-col items-center text-center">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 translate-x-1/2"></div>
+<div class="relative z-10 max-w-3xl">
+<h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-none mb-10">
+                    Ready for a <span class="serif-italic font-normal lowercase">cleaner</span> workspace?
+                </h2>
+<p class="text-lg text-slate-400 mb-12 font-light tracking-wide">
+                    Elevate your business environment with Canada's premier commercial cleaning partner.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-primary hover:bg-white hover:text-black text-white px-12 py-5 text-xs font-bold tracking-[0.2em] uppercase transition-all">
+                        Request a Proposal
+                    </button>
+<button class="border border-white/20 hover:border-white px-12 py-5 text-xs font-bold tracking-[0.2em] uppercase transition-all">
+                        View Case Studies
+                    </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-white dark:bg-elite-black border-t border-slate-100 dark:border-white/5 py-20">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">diamond</span>
+<span class="font-extrabold text-xl tracking-tighter uppercase">RBA COMMERCIAL</span>
+</div>
+<p class="text-slate-400 text-xs font-medium tracking-widest">© 2024 ELITE SERVICES DIVISION</p>
+</div>
+<div class="flex flex-wrap gap-x-16 gap-y-4">
+<a class="text-[10px] font-bold tracking-[0.3em] uppercase hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="text-[10px] font-bold tracking-[0.3em] uppercase hover:text-primary transition-colors" href="#">Compliance</a>
+<a class="text-[10px] font-bold tracking-[0.3em] uppercase hover:text-primary transition-colors" href="#">Careers</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

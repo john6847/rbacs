@@ -1,0 +1,206 @@
+{
+    "Hero": {
+        "subtitle": "Professional Services",
+        "title_part1": "Commercial Cleaning",
+        "title_part2": "You Can Trust",
+        "description": "RBA Commercial Services delivers reliable, high-quality cleaning solutions for offices, clinics, retail spaces, and commercial properties across Canada.",
+        "cta": "Get a Free Quote"
+    },
+    "WhyUs": {
+        "subtitle": "Trusted By Industry Leaders",
+        "title_part1": "Why Businesses",
+        "title_part2": "Choose Us",
+        "description": "At RBA Commercial Services, we believe a clean workplace reflects your professionalism. Our trained cleaning specialists deliver consistent results, reliable scheduling, and attention to detail — every visit, every space.",
+        "cta": "Learn More",
+        "items": {
+            "eco": {
+                "title": "Eco-Friendly",
+                "desc": "Eco-conscious products available for a safer, healthier workplace environment."
+            },
+            "support": {
+                "title": "Reliable Service",
+                "desc": "Detail-oriented cleaning standards with flexible scheduling to suit your needs."
+            },
+            "expert": {
+                "title": "Professional Staff",
+                "desc": "Fully insured, background-checked, and highly trained cleaning specialists."
+            }
+        }
+    },
+    "NextSteps": {
+        "subtitle": "Next Steps",
+        "headline": "READY FOR A",
+        "headline_highlight": "Clean",
+        "headline_end": "START?",
+        "description": "Speak with a facilities specialist today. We offer competitive pricing and flexible schedules across Canada.",
+        "call": "Call Us",
+        "email": "Email Us",
+        "form": {
+            "title": "Request a Callback",
+            "name_label": "Full Name",
+            "name_placeholder": "Type your name...",
+            "email_label": "Company Email",
+            "email_placeholder": "your@email.com",
+            "facility_label": "Facility Type",
+            "submit": "Send Request"
+        }
+    },
+    "Navbar": {
+        "services": "Services",
+        "experience": "About",
+        "philosophy": "Philosophy",
+        "testimonials": "Testimonials",
+        "contact": "Contact",
+        "inquire": "Inquire"
+    },
+    "About": {
+        "hero_title": "OUR LEGACY",
+        "hero_subtitle": "Built on Trust.",
+        "hero_desc": "RBA Commercial Services is a professional commercial cleaning company serving businesses across Canada. We specialize in delivering reliable, consistent, and high-quality cleaning solutions.",
+        "mission_title": "OUR MISSION",
+        "mission_headline": "ELEVATING",
+        "mission_highlight": "Standards.",
+        "mission_desc": "To provide dependable commercial cleaning services that help businesses operate in clean, safe, and professional environments — without stress or disruption.",
+        "values_title": "CORE VALUES",
+        "values": {
+            "integrity": {
+                "title": "Reliability",
+                "desc": "We show up on time, every time."
+            },
+            "excellence": {
+                "title": "Quality",
+                "desc": "We clean thoroughly, not quickly."
+            },
+            "sustainability": {
+                "title": "Professionalism",
+                "desc": "Trained staff, insured operations, respectful service."
+            }
+        },
+        "team_title": "OUR EXPERTS",
+        "team_desc": "Meet the dedicated professionals ensuring your facility shines.",
+        "cta_title": "Join Our Legacy",
+        "cta_button": "Work With Us"
+    },
+    "Services": {
+        "hero_title": "OUR EXPERTISE",
+        "hero_subtitle": "Precision in.",
+        "hero_highlight": "Every Detail.",
+        "hero_desc": "Comprehensive cleaning solutions tailored to the unique demands of your industry.",
+        "solutions_title": "TAILORED SOLUTIONS",
+        "solutions_subtitle": "Specialized Services",
+        "items": {
+            "office": {
+                "title": "Office Cleaning",
+                "desc": "Keep your workplace clean, healthy, and productive with scheduled professional office cleaning."
+            },
+            "medical": {
+                "title": "Medical Clinic Cleaning",
+                "desc": "Specialized cleaning protocols designed for healthcare environments where hygiene matters most."
+            },
+            "industrial": {
+                "title": "Post-Construction",
+                "desc": "Remove dust, debris, and residue quickly after renovations or builds — ready for occupancy."
+            },
+            "retail": {
+                "title": "Retail & Store Cleaning",
+                "desc": "Create a spotless customer experience with reliable retail cleaning services."
+            }
+        },
+        "process_title": "OUR PROCESS",
+        "process_steps": {
+            "1": {
+                "title": "Assessment",
+                "desc": "We analyze your facility's specific needs."
+            },
+            "2": {
+                "title": "Custom Plan",
+                "desc": "Tailoring a schedule and checklist for you."
+            },
+            "3": {
+                "title": "Execution",
+                "desc": "Consistent delivery by trained experts."
+            },
+            "4": {
+                "title": "Quality Control",
+                "desc": "Regular inspections to ensure excellence."
+            }
+        },
+        "cta_title": "Ready for a higher standard?",
+        "cta_button": "Get a Custom Quote"
+    },
+    "Contact": {
+        "hero_label": "Direct Access",
+        "hero_title": "START THE",
+        "hero_highlight": "Dialogue.",
+        "subtitle": "Get in touch with our team for inquiries, support, or partnership opportunities.",
+        "info_title": "Contact Information",
+        "info": {
+            "phone": {
+                "title": "Phone",
+                "value": "(XXX) XXX-XXXX"
+            },
+            "email": {
+                "title": "Email",
+                "value": "info@rbacommercialservices.ca"
+            },
+            "address": {
+                "title": "Headquarters",
+                "value": "Canada"
+            }
+        },
+        "form_title": "Send a Message",
+        "form": {
+            "name_label": "Full Name",
+            "name_placeholder": "Enter your name",
+            "email_label": "Email Address",
+            "email_placeholder": "Enter your email",
+            "subject_label": "Subject",
+            "subject_placeholder": "How can we help?",
+            "message_label": "Message",
+            "message_placeholder": "Tell us about your needs...",
+            "submit_button": "Send Message"
+        }
+    },
+    "Testimonials": {
+        "title": "Client Success Stories",
+        "subtitle": "Discover how RBA Commercial Services transforms workspaces with consistent excellence and dedication.",
+        "items": {
+            "1": {
+                "text": "Reliable, professional, and thorough. Our office has never looked better.",
+                "author": "Client",
+                "role": "Business Owner"
+            },
+            "2": {
+                "text": "Excellent service and fast response. Highly recommended.",
+                "author": "Manager",
+                "role": "Operations"
+            },
+            "3": {
+                "text": "Great attention to detail and very easy to work with.",
+                "author": "Partner",
+                "role": "Director"
+            }
+        }
+    },
+    "Footer": {
+        "description": "Canada's choice for professional commercial cleaning. Excellence in every corner, reliability in every visit.",
+        "headings": {
+            "services": "Services",
+            "company": "Company",
+            "compliance": "Compliance"
+        },
+        "links": {
+            "office": "Office Cleaning",
+            "medical": "Medical Clinic Cleaning",
+            "retail": "Retail & Store Cleaning",
+            "construction": "Post-Construction",
+            "about": "About Us",
+            "testimonials": "Testimonials",
+            "philosophy": "Services",
+            "contact": "Contact",
+            "privacy": "Privacy",
+            "terms": "Terms"
+        },
+        "copyright": "© 2024 RBA Commercial Services. All rights reserved."
+    }
+}

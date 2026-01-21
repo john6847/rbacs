@@ -1,0 +1,206 @@
+{
+    "Hero": {
+        "subtitle": "Nettoyage commercial professionnel de confiance",
+        "title_part1": "FIABILITÉ",
+        "title_part2": "Constante.",
+        "description": "RBA Commercial Services offre des solutions de nettoyage fiables et de haute qualité pour les bureaux, cliniques, commerces et propriétés commerciales partout au Canada.",
+        "cta": "Obtenir un devis gratuit"
+    },
+    "WhyUs": {
+        "subtitle": "Reconnu par les leaders de l'industrie",
+        "title_part1": "Pourquoi Nous",
+        "title_part2": "Choisir",
+        "description": "Chez RBA Commercial Services, nous croyons qu'un lieu de travail propre reflète votre professionnalisme via un personnel formé, des résultats constants et une attention aux détails.",
+        "cta": "En Savoir Plus",
+        "items": {
+            "eco": {
+                "title": "Éco-Certifié",
+                "desc": "Produits chimiques exclusivement verts et méthodes durables pour un espace de travail plus sain."
+            },
+            "support": {
+                "title": "Priorité 24/7",
+                "desc": "Équipe d'intervention rapide disponible 24h/24 pour gérer les urgences sans interruption."
+            },
+            "expert": {
+                "title": "Personnel Expert",
+                "desc": "Vérifications rigoureuses des antécédents et formation continue pour les exigences de haute sécurité."
+            }
+        }
+    },
+    "NextSteps": {
+        "subtitle": "Prochaines étapes",
+        "headline": "PRÊT pour un",
+        "headline_highlight": "Nouveau",
+        "headline_end": "DÉPART?",
+        "description": "Parlez à un spécialiste aujourd'hui. Nous offrons des prix compétitifs et des horaires flexibles.",
+        "call": "Appelez-nous",
+        "email": "Envoyez-nous un courriel",
+        "form": {
+            "title": "Demander un rappel",
+            "name_label": "Nom complet",
+            "name_placeholder": "Votre nom...",
+            "email_label": "Courriel professionnel",
+            "email_placeholder": "votre@email.com",
+            "facility_label": "Type d'installation",
+            "submit": "Envoyer la demande"
+        }
+    },
+    "Navbar": {
+        "services": "Services",
+        "experience": "Expérience",
+        "philosophy": "Philosophie",
+        "testimonials": "Témoignages",
+        "contact": "Contact",
+        "inquire": "Demander"
+    },
+    "About": {
+        "hero_title": "NOTRE HÉRITAGE",
+        "hero_subtitle": "Bâti sur la Confiance.",
+        "hero_desc": "Depuis plus de deux décennies, RBA Commercial Services établit la norme d'excellence en nettoyage commercial. Nous ne nettoyons pas simplement des espaces ; nous créons des environnements qui inspirent productivité et confiance.",
+        "mission_title": "NOTRE MISSION",
+        "mission_headline": "ÉLEVER les",
+        "mission_highlight": "Standards.",
+        "mission_desc": "Fournir une qualité sans compromis dans l'entretien commercial grâce à des pratiques durables, une formation experte et une fiabilité constante.",
+        "values_title": "VALEURS FONDAMENTALES",
+        "values": {
+            "integrity": {
+                "title": "Intégrité",
+                "desc": "Faire ce qu'il faut, même quand personne ne regarde."
+            },
+            "excellence": {
+                "title": "Excellence",
+                "desc": "Dépasser constamment les normes de l'industrie."
+            },
+            "sustainability": {
+                "title": "Durabilité",
+                "desc": "Protéger notre planète avec des solutions écologiques."
+            }
+        },
+        "team_title": "NOS EXPERTS",
+        "team_desc": "Rencontrez les professionnels dévoués qui assurent la propreté de vos installations.",
+        "cta_title": "Rejoignez notre héritage",
+        "cta_button": "Travaillez avec nous"
+    },
+    "Services": {
+        "hero_title": "NOTRE EXPERTISE",
+        "hero_subtitle": "La Précision dans.",
+        "hero_highlight": "Chaque Détail.",
+        "hero_desc": "Des solutions de nettoyage complètes adaptées aux exigences uniques de votre industrie.",
+        "solutions_title": "SOLUTIONS SUR MESURE",
+        "solutions_subtitle": "Services Spécialisés",
+        "items": {
+            "office": {
+                "title": "Corporatif et Bureau",
+                "desc": "Entretien quotidien pour les environnements à fort trafic, assurant un espace de travail impeccable pour votre équipe."
+            },
+            "medical": {
+                "title": "Médical et Clinique",
+                "desc": "Protocoles de désinfection de qualité hospitalière pour les cliniques, cabinets dentaires et établissements de santé."
+            },
+            "industrial": {
+                "title": "Industriel et Entrepôt",
+                "desc": "Nettoyage robuste pour la sécurité et l'efficacité dans les espaces de fabrication et de stockage."
+            },
+            "retail": {
+                "title": "Commerce et Salle d'exposition",
+                "desc": "Présentation immaculée pour les environnements accueillant des clients afin de rehausser la valeur de la marque."
+            }
+        },
+        "process_title": "NOTRE PROCESSUS",
+        "process_steps": {
+            "1": {
+                "title": "Évaluation",
+                "desc": "Nous analysons les besoins spécifiques de votre installation."
+            },
+            "2": {
+                "title": "Plan Personnalisé",
+                "desc": "Élaboration d'un calendrier et d'une liste de contrôle pour vous."
+            },
+            "3": {
+                "title": "Exécution",
+                "desc": "Livraison constante par des experts formés."
+            },
+            "4": {
+                "title": "Contrôle Qualité",
+                "desc": "Inspections régulières pour assurer l'excellence."
+            }
+        },
+        "cta_title": "Prêt pour un standard plus élevé ?",
+        "cta_button": "Obtenir un devis personnalisé"
+    },
+    "Contact": {
+        "hero_label": "Accès Direct",
+        "hero_title": "COMMENCER LE",
+        "hero_highlight": "Dialogue.",
+        "subtitle": "Contactez notre équipe pour des renseignements, du support ou des opportunités de partenariat.",
+        "info_title": "Informations de Contact",
+        "info": {
+            "phone": {
+                "title": "Téléphone",
+                "value": "+1 (555) 123-4567"
+            },
+            "email": {
+                "title": "Courriel",
+                "value": "info@rbacservices.com"
+            },
+            "address": {
+                "title": "Siège Social",
+                "value": "123 Business Way, Toronto, ON"
+            }
+        },
+        "form_title": "Envoyer un message",
+        "form": {
+            "name_label": "Nom complet",
+            "name_placeholder": "Entrez votre nom",
+            "email_label": "Adresse courriel",
+            "email_placeholder": "Entrez votre courriel",
+            "subject_label": "Sujet",
+            "subject_placeholder": "Comment pouvons-nous aider ?",
+            "message_label": "Message",
+            "message_placeholder": "Parlez-nous de vos besoins...",
+            "submit_button": "Envoyer le message"
+        }
+    },
+    "Testimonials": {
+        "title": "Témoignages de Clients",
+        "subtitle": "Découvrez comment RBA Commercial Services transforme les espaces de travail avec une excellence et un dévouement constants.",
+        "items": {
+            "1": {
+                "text": "La cohérence et l'attention aux détails fournies par RBA sont inégalées. Notre bureau n'a jamais été aussi beau.",
+                "author": "Sarah J.",
+                "role": "Gestionnaire des Opérations"
+            },
+            "2": {
+                "text": "Fiable, professionnel et minutieux. Nous faisons confiance à RBA pour tous nos besoins de nettoyage commercial.",
+                "author": "Michael T.",
+                "role": "Directeur des Installations"
+            },
+            "3": {
+                "text": "Service exceptionnel ! L'équipe est toujours ponctuelle et laisse notre espace de vente impeccable.",
+                "author": "Emily R.",
+                "role": "Gérante de Magasin"
+            }
+        }
+    },
+    "Footer": {
+        "description": "Le choix du Canada pour un nettoyage commercial éco-responsable. L'excellence dans chaque coin, la fiabilité à chaque visite.",
+        "headings": {
+            "services": "Services",
+            "company": "Entreprise",
+            "compliance": "Conformité"
+        },
+        "links": {
+            "office": "Nettoyage de Bureaux",
+            "medical": "Nettoyage de Cliniques Médicales",
+            "retail": "Nettoyage de Magasins",
+            "construction": "Après Construction",
+            "about": "À Propos",
+            "testimonials": "Témoignages",
+            "philosophy": "Philosophie",
+            "contact": "Contact",
+            "privacy": "Confidentialité",
+            "terms": "Conditions"
+        },
+        "copyright": "© 2025 RBA Commercial Services Inc. Tous droits réservés."
+    }
+}
