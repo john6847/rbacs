@@ -57,10 +57,14 @@
         "hero_title": "NOTRE HÉRITAGE",
         "hero_subtitle": "Bâti sur la Confiance.",
         "hero_desc": "Depuis plus de deux décennies, RBA Commercial Services établit la norme d'excellence en nettoyage commercial. Nous ne nettoyons pas simplement des espaces ; nous créons des environnements qui inspirent productivité et confiance.",
+        "legacy_title": "NOTRE HÉRITAGE",
+        "legacy_desc1": "Fondé avec la vision de redéfinir le nettoyage commercial, RBA Commercial Services a évolué d'un fournisseur de services local pour devenir un partenaire de confiance pour les entreprises à travers le Canada. Notre parcours repose sur une promesse simple : livrer des résultats immaculés avec une fiabilité sans compromis.",
+        "legacy_desc2": "Au fil des ans, nous avons perfectionné nos méthodes, investi dans des technologies de nettoyage écologiques de pointe et formé une équipe de professionnels hautement qualifiés qui partagent notre engagement envers l'excellence.",
         "mission_title": "NOTRE MISSION",
         "mission_headline": "ÉLEVER les",
         "mission_highlight": "Standards.",
         "mission_desc": "Fournir une qualité sans compromis dans l'entretien commercial grâce à des pratiques durables, une formation experte et une fiabilité constante.",
+        "mission_quote": "Nous ne nettoyons pas simplement des espaces de travail ; nous concevons des environnements qui favorisent la santé, inspirent la productivité et protègent la réputation de votre marque.",
         "values_title": "VALEURS FONDAMENTALES",
         "values": {
             "integrity": {
@@ -137,15 +141,15 @@
         "info": {
             "phone": {
                 "title": "Téléphone",
-                "value": "+1 (555) 123-4567"
+                "value": "1-800-RBA-CLEAN"
             },
             "email": {
                 "title": "Courriel",
-                "value": "info@rbacservices.com"
+                "value": "contact@rbacommercialservices.com"
             },
             "address": {
                 "title": "Siège Social",
-                "value": "123 Business Way, Toronto, ON"
+                "value": "8360 rue birnam, Montreal, QC, Canada"
             }
         },
         "form_title": "Envoyer un message",

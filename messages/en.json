@@ -57,10 +57,14 @@
         "hero_title": "OUR LEGACY",
         "hero_subtitle": "Built on Trust.",
         "hero_desc": "RBA Commercial Services is a professional commercial cleaning company serving businesses across Canada. We specialize in delivering reliable, consistent, and high-quality cleaning solutions.",
+        "legacy_title": "OUR LEGACY",
+        "legacy_desc1": "Founded with a vision to redefine commercial cleaning, RBA Commercial Services has grown from a local service provider into a trusted partner for businesses across Canada. Our journey is built on a simple promise: to deliver immaculate results with uncompromising reliability.",
+        "legacy_desc2": "Over the years, we have refined our methods, invested in state-of-the-art green cleaning technologies, and built a team of highly trained professionals who share our commitment to excellence.",
         "mission_title": "OUR MISSION",
         "mission_headline": "ELEVATING",
         "mission_highlight": "Standards.",
         "mission_desc": "To provide dependable commercial cleaning services that help businesses operate in clean, safe, and professional environments — without stress or disruption.",
+        "mission_quote": "We don't just clean workspaces; we curate environments that promote health, inspire productivity, and protect your brand's reputation.",
         "values_title": "CORE VALUES",
         "values": {
             "integrity": {
@@ -137,15 +141,15 @@
         "info": {
             "phone": {
                 "title": "Phone",
-                "value": "(XXX) XXX-XXXX"
+                "value": "1-800-RBA-CLEAN"
             },
             "email": {
                 "title": "Email",
-                "value": "info@rbacommercialservices.ca"
+                "value": "contact@rbacommercialservices.com"
             },
             "address": {
                 "title": "Headquarters",
-                "value": "Canada"
+                "value": "8360 rue birnam, Montreal, QC, Canada"
             }
         },
         "form_title": "Send a Message",
@@ -201,6 +205,6 @@
             "privacy": "Privacy",
             "terms": "Terms"
         },
-        "copyright": "© 2024 RBA Commercial Services. All rights reserved."
+        "copyright": "© 2026 RBA Commercial Services. All rights reserved."
     }
 }

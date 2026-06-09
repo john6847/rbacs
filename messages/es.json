@@ -57,10 +57,14 @@
         "hero_title": "NUESTRO LEGADO",
         "hero_subtitle": "Construido en Confianza.",
         "hero_desc": "Durante más de dos décadas, RBA Commercial Services ha establecido el estándar de excelencia en limpieza comercial. No solo limpiamos espacios; curamos ambientes que inspiran productividad y confianza.",
+        "legacy_title": "NUESTRO LEGADO",
+        "legacy_desc1": "Fundado con la visión de redefinir la limpieza comercial, RBA Commercial Services ha crecido desde ser un proveedor local hasta convertirse en un socio de confianza para empresas en todo Canadá. Nuestra trayectoria se basa en una promesa simple: ofrecer resultados impecables con una confiabilidad inquebrantable.",
+        "legacy_desc2": "A lo largo de los años, hemos perfeccionado nuestros métodos, invertido en tecnologías de limpieza ecológica de última generación y formado un equipo de profesionales altamente capacitados que comparten nuestro compromiso con la excelencia.",
         "mission_title": "NUESTRA MISIÓN",
         "mission_headline": "ELEVANDO los",
         "mission_highlight": "Estándares.",
         "mission_desc": "Proporcionar una calidad inquebrantable en el mantenimiento comercial a través de prácticas sostenibles, capacitación experta y confiabilidad.",
+        "mission_quote": "No solo limpiamos espacios de trabajo; curamos entornos que promueven la salud, inspiran la productividad y protegen la reputación de su marca.",
         "values_title": "VALORES FUNDAMENTALES",
         "values": {
             "integrity": {
@@ -137,15 +141,15 @@
         "info": {
             "phone": {
                 "title": "Teléfono",
-                "value": "+1 (555) 123-4567"
+                "value": "1-800-RBA-CLEAN"
             },
             "email": {
                 "title": "Correo",
-                "value": "info@rbacservices.com"
+                "value": "contact@rbacommercialservices.com"
             },
             "address": {
                 "title": "Sede",
-                "value": "123 Business Way, Toronto, ON"
+                "value": "8360 rue birnam, Montreal, QC, Canada"
             }
         },
         "form_title": "Enviar un mensaje",

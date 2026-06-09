@@ -54,8 +54,8 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-12 border-t border-gray-100">
                     <p className="text-[10px] text-gray-400 uppercase tracking-widest">{t('copyright')}</p>
                     <div className="flex gap-8">
-                        <Link href="#" className="text-[10px] text-gray-400 uppercase tracking-widest hover:text-black transition-colors">{t('links.privacy')}</Link>
-                        <Link href="#" className="text-[10px] text-gray-400 uppercase tracking-widest hover:text-black transition-colors">{t('links.terms')}</Link>
+                        <Link href="/privacy" className="text-[10px] text-gray-400 uppercase tracking-widest hover:text-black transition-colors">{t('links.privacy')}</Link>
+                        <Link href="/terms" className="text-[10px] text-gray-400 uppercase tracking-widest hover:text-black transition-colors">{t('links.terms')}</Link>
                     </div>
                 </div>
             </div>

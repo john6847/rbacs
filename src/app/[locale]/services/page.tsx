@@ -93,7 +93,7 @@ export default function Services() {
                     </div>
                 </div>
             </main>
-            <section className="bg-white dark:bg-elite-black py-32 border-y border-slate-100 dark:border-white/5">
+            <section className="hidden bg-white dark:bg-elite-black py-32 border-y border-slate-100 dark:border-white/5">
                 <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
                         <div className="flex flex-col border-l border-slate-200 dark:border-white/10 pl-8">

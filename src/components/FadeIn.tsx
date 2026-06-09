@@ -9,9 +9,14 @@ type FadeInProps = {
     direction?: 'up' | 'down' | 'left' | 'right' | 'none';
     fullWidth?: boolean;
     className?: string;
+    isActive?: boolean;
 };
 
-export default function FadeIn({ children, delay = 0, direction = 'up', fullWidth = false, className = '' }: FadeInProps) {
+export default function FadeIn({ children, delay = 0, direction = 'up', fullWidth = false, className = '', isActive = false }: FadeInProps) {
+    if (!isActive) {
+        return <div className={`${fullWidth ? 'w-full' : ''} ${className}`}>{children}</div>;
+    }
+
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-10% 0px" });
 

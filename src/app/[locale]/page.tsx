@@ -4,9 +4,9 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import CallbackForm from '@/components/CallbackForm';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import FadeIn from '@/components/FadeIn';
+import Script from 'next/script';
 
 export default function Home() {
   const tHero = useTranslations('Hero');
@@ -33,7 +33,7 @@ export default function Home() {
             <img alt="Hero background" className="w-full h-full object-cover" src="/office.jpg" />
           </motion.div>
           <div className="relative z-20 text-center px-6">
-            <FadeIn delay={0.2}>
+            <FadeIn delay={0.2} isActive={true}>
                 <span className="inline-block text-white/70 text-[11px] font-bold uppercase tracking-[0.4em] mb-8">{tHero('subtitle')}</span>
             </FadeIn>
             <div className="overflow-hidden mb-8">
@@ -47,7 +47,7 @@ export default function Home() {
                 <span className="italic-serif font-light text-accent-blue">{tHero('title_part2')}</span>
                 </motion.h1>
             </div>
-            <FadeIn delay={0.8}>
+            <FadeIn delay={0.8} isActive={true}>
                 <p className="text-white/80 text-lg md:text-xl font-light max-w-xl mx-auto leading-relaxed mb-12">
                 {tHero('description')}
                 </p>
@@ -98,14 +98,14 @@ export default function Home() {
               <div className="lg:col-span-5 relative">
                 <FadeIn direction="right">
                     <div className="sticky top-40">
-                    <div className="w-12 h-1 bg-accent-blue mb-8"></div>
+                    <div className="w-12 h-1 bg-accent-gold mb-8"></div>
                     <h2 className="text-4xl md:text-6xl font-extrabold tracking-tighter mb-8 leading-none text-slate-900">
                         {tWhyUs('title_part1')} <br/> <span className="text-slate-400">{tWhyUs('title_part2')}</span>
                     </h2>
                     <p className="text-lg text-slate-500 leading-relaxed mb-12 max-w-md">
                         {tWhyUs('description')}
                     </p>
-                    <Link href="/services" className="text-xs font-bold uppercase tracking-widest border-b border-black pb-2 hover:text-accent-blue hover:border-accent-blue transition-colors text-slate-900">
+                    <Link href="/services" className="text-xs font-bold uppercase tracking-widest border-b border-black pb-2 hover:text-accent-gold hover:border-accent-gold transition-colors text-slate-900">
                         {tWhyUs('cta')}
                     </Link>
                     </div>
@@ -114,22 +114,22 @@ export default function Home() {
               <div className="lg:col-span-7 grid gap-20">
                 <FadeIn delay={0.2}>
                     <div className="group border-t border-slate-200 pt-10">
-                        <span className="text-accent-blue text-xs font-bold mb-4 block">01</span>
-                        <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-blue transition-colors text-slate-900">{tWhyUs('items.eco.title')}</h3>
+                        <span className="text-accent-gold text-xs font-bold mb-4 block">01</span>
+                        <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-gold transition-colors text-slate-900">{tWhyUs('items.eco.title')}</h3>
                         <p className="text-slate-500 mb-8 max-w-md">{tWhyUs('items.eco.desc')}</p>
                     </div>
                 </FadeIn>
                 <FadeIn delay={0.4}>
                     <div className="group border-t border-slate-200 pt-10">
-                        <span className="text-accent-blue text-xs font-bold mb-4 block">02</span>
-                        <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-blue transition-colors text-slate-900">{tWhyUs('items.support.title')}</h3>
+                        <span className="text-accent-gold text-xs font-bold mb-4 block">02</span>
+                        <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-gold transition-colors text-slate-900">{tWhyUs('items.support.title')}</h3>
                         <p className="text-slate-500 mb-8 max-w-md">{tWhyUs('items.support.desc')}</p>
                     </div>
                 </FadeIn>
                 <FadeIn delay={0.6}>
                     <div className="group border-t border-slate-200 pt-10">
-                        <span className="text-accent-blue text-xs font-bold mb-4 block">03</span>
-                        <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-blue transition-colors text-slate-900">{tWhyUs('items.expert.title')}</h3>
+                        <span className="text-accent-gold text-xs font-bold mb-4 block">03</span>
+                        <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-gold transition-colors text-slate-900">{tWhyUs('items.expert.title')}</h3>
                         <p className="text-slate-500 mb-8 max-w-md">{tWhyUs('items.expert.desc')}</p>
                     </div>
                 </FadeIn>
@@ -143,7 +143,7 @@ export default function Home() {
               <span className="text-white/40 text-[11px] font-bold uppercase tracking-[0.4em]">{tNextSteps('subtitle')}</span>
               <h2 className="text-5xl md:text-7xl font-extrabold text-white tracking-tighter leading-[0.9]">
                 {tNextSteps('headline')} <br />
-                <span className="italic-serif font-light text-accent-blue">{tNextSteps('headline_highlight')}</span> {tNextSteps('headline_end')}
+                <span className="italic-serif font-light text-accent-gold">{tNextSteps('headline_highlight')}</span> {tNextSteps('headline_end')}
               </h2>
               <p className="text-white/60 text-xl font-light leading-relaxed max-w-md">
                 {tNextSteps('description')}
@@ -160,9 +160,26 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:w-1/2 w-full max-w-xl">
-              <div className="bg-[#111111] p-12 rounded-2xl border border-white/5 shadow-2xl">
+              <div className="bg-[#111111] p-8 md:p-12 rounded-2xl border border-white/5 shadow-2xl min-h-[632px]">
                 <h3 className="text-white text-2xl font-bold mb-10 tracking-tight">{tNextSteps('form.title')}</h3>
-                <CallbackForm />
+                <iframe
+                  src="https://api.vakaks.com/widget/form/qPdmJPKqxsM8YSxTSIKl"
+                  style={{ width: '100%', height: '632px', border: 'none', borderRadius: '8px' }}
+                  id="inline-qPdmJPKqxsM8YSxTSIKl" 
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Form 0"
+                  data-height="632"
+                  data-layout-iframe-id="inline-qPdmJPKqxsM8YSxTSIKl"
+                  data-form-id="qPdmJPKqxsM8YSxTSIKl"
+                  title="Form 0"
+                />
+                <Script src="https://api.vakaks.com/js/form_embed.js" strategy="afterInteractive" />
               </div>
             </div>
           </div>

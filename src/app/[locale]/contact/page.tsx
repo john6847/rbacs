@@ -3,8 +3,8 @@ import React from 'react';
 import { useTranslations } from 'next-intl';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import ContactForm from '@/components/ContactForm';
 import FadeIn from '@/components/FadeIn';
+import Script from 'next/script';
 
 export default function Contact() {
     const t = useTranslations('Contact');
@@ -30,7 +30,26 @@ export default function Contact() {
                             </FadeIn>
                             
                             <FadeIn delay={0.4}>
-                                <ContactForm />
+                                <div className="w-full min-h-[632px]">
+                                    <iframe
+                                        src="https://api.vakaks.com/widget/form/qPdmJPKqxsM8YSxTSIKl"
+                                        style={{ width: '100%', height: '632px', border: 'none', borderRadius: '8px' }}
+                                        id="inline-qPdmJPKqxsM8YSxTSIKl" 
+                                        data-layout="{'id':'INLINE'}"
+                                        data-trigger-type="alwaysShow"
+                                        data-trigger-value=""
+                                        data-activation-type="alwaysActivated"
+                                        data-activation-value=""
+                                        data-deactivation-type="neverDeactivate"
+                                        data-deactivation-value=""
+                                        data-form-name="Form 0"
+                                        data-height="632"
+                                        data-layout-iframe-id="inline-qPdmJPKqxsM8YSxTSIKl"
+                                        data-form-id="qPdmJPKqxsM8YSxTSIKl"
+                                        title="Form 0"
+                                    />
+                                    <Script src="https://api.vakaks.com/js/form_embed.js" strategy="afterInteractive" />
+                                </div>
                             </FadeIn>
                         </div>
                         <div className="lg:col-span-5 flex flex-col gap-12 lg:sticky lg:top-40">

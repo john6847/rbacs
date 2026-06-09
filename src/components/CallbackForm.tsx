@@ -51,16 +51,16 @@ export default function CallbackForm() {
     return (
         <form className="space-y-8" onSubmit={handleSubmit}>
             <div className="relative group">
-            <label className="block text-[10px] text-white/40 uppercase tracking-widest mb-2 group-focus-within:text-accent-blue transition-colors">{tNextSteps('form.name_label')}</label>
-            <input name="name" className="w-full bg-transparent border-0 border-b border-white/10 focus:ring-0 focus:border-accent-blue text-white py-3 px-0 transition-all placeholder:text-white/10" placeholder={tNextSteps('form.name_placeholder')} type="text" required />
+            <label className="block text-[10px] text-white/40 uppercase tracking-widest mb-2 group-focus-within:text-accent-gold transition-colors">{tNextSteps('form.name_label')}</label>
+            <input name="name" className="w-full bg-transparent border-0 border-b border-white/10 focus:ring-0 focus:border-accent-gold text-white py-3 px-0 transition-all placeholder:text-white/10" placeholder={tNextSteps('form.name_placeholder')} type="text" required />
             </div>
             <div className="relative group">
-            <label className="block text-[10px] text-white/40 uppercase tracking-widest mb-2 group-focus-within:text-accent-blue transition-colors">{tNextSteps('form.email_label')}</label>
-            <input name="email" className="w-full bg-transparent border-0 border-b border-white/10 focus:ring-0 focus:border-accent-blue text-white py-3 px-0 transition-all placeholder:text-white/10" placeholder={tNextSteps('form.email_placeholder')} type="email" required />
+            <label className="block text-[10px] text-white/40 uppercase tracking-widest mb-2 group-focus-within:text-accent-gold transition-colors">{tNextSteps('form.email_label')}</label>
+            <input name="email" className="w-full bg-transparent border-0 border-b border-white/10 focus:ring-0 focus:border-accent-gold text-white py-3 px-0 transition-all placeholder:text-white/10" placeholder={tNextSteps('form.email_placeholder')} type="email" required />
             </div>
             <div className="relative group">
-            <label className="block text-[10px] text-white/40 uppercase tracking-widest mb-2 group-focus-within:text-accent-blue transition-colors">{tNextSteps('form.facility_label')}</label>
-            <select name="facility-type" className="w-full bg-transparent border-0 border-b border-white/10 focus:ring-0 focus:border-accent-blue text-white py-3 px-0 transition-all appearance-none cursor-pointer">
+            <label className="block text-[10px] text-white/40 uppercase tracking-widest mb-2 group-focus-within:text-accent-gold transition-colors">{tNextSteps('form.facility_label')}</label>
+            <select name="facility-type" className="w-full bg-transparent border-0 border-b border-white/10 focus:ring-0 focus:border-accent-gold text-white py-3 px-0 transition-all appearance-none cursor-pointer">
                 <option className="bg-rba-dark" value="office">Office Building</option>
                 <option className="bg-rba-dark" value="industrial">Industrial/Warehouse</option>
                 <option className="bg-rba-dark" value="medical">Healthcare/Clinic</option>
@@ -70,7 +70,7 @@ export default function CallbackForm() {
             <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full bg-white text-black py-6 rounded-full font-bold uppercase text-[11px] tracking-[0.2em] hover:bg-accent-blue hover:text-white transition-all duration-500 mt-10 disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full bg-white text-black py-6 rounded-full font-bold uppercase text-[11px] tracking-[0.2em] hover:bg-accent-gold hover:text-white transition-all duration-500 mt-10 disabled:opacity-70 disabled:cursor-not-allowed"
             >
             {buttonText}
             </button>
