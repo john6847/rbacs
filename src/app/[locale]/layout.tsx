@@ -28,6 +28,7 @@ export const metadata = {
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import Script from 'next/script';
  
 export default async function RootLayout({
   children,
@@ -48,6 +49,12 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <Script 
+          src="https://beta.leadconnectorhq.com/loader.js" 
+          data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js" 
+          data-widget-id="6a287526f1441b3a2c885037"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
