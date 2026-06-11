@@ -12,13 +12,13 @@ export default function Home() {
   const tHero = useTranslations('Hero');
   const tWhyUs = useTranslations('WhyUs');
   const tNextSteps = useTranslations('NextSteps');
-  
+
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"]
   });
-  
+
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
@@ -34,32 +34,32 @@ export default function Home() {
           </motion.div>
           <div className="relative z-20 text-center px-6">
             <FadeIn delay={0.2} isActive={true}>
-                <span className="inline-block text-white/70 text-[11px] font-bold uppercase tracking-[0.4em] mb-8">{tHero('subtitle')}</span>
+              <span className="inline-block text-white/70 text-[11px] font-bold uppercase tracking-[0.4em] mb-8">{tHero('subtitle')}</span>
             </FadeIn>
             <div className="overflow-hidden mb-8">
-                <motion.h1 
-                    initial={{ y: 100, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98], delay: 0.4 }}
-                    className="text-white text-5xl md:text-[6rem] font-extrabold leading-[0.85] tracking-tighter"
-                >
+              <motion.h1
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98], delay: 0.4 }}
+                className="text-white text-5xl md:text-[6rem] font-extrabold leading-[0.85] tracking-tighter"
+              >
                 {tHero('title_part1')} <br />
                 <span className="italic-serif font-light text-accent-blue">{tHero('title_part2')}</span>
-                </motion.h1>
+              </motion.h1>
             </div>
             <FadeIn delay={0.8} isActive={true}>
-                <p className="text-white/80 text-lg md:text-xl font-light max-w-xl mx-auto leading-relaxed mb-12">
+              <p className="text-white/80 text-lg md:text-xl font-light max-w-xl mx-auto leading-relaxed mb-12">
                 {tHero('description')}
-                </p>
-                <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+              </p>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                 <Link href="/about" className="group relative flex items-center gap-3 bg-white text-black px-10 py-5 rounded-full text-xs font-bold uppercase tracking-widest overflow-hidden transition-all hover:scale-105">
-                    <span className="relative z-10">{tHero('cta')}</span>
-                    <span className="material-symbols-outlined relative z-10 text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                  <span className="relative z-10">{tHero('cta')}</span>
+                  <span className="material-symbols-outlined relative z-10 text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                 </Link>
-                </div>
+              </div>
             </FadeIn>
           </div>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 1 }}
@@ -97,41 +97,41 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
               <div className="lg:col-span-5 relative">
                 <FadeIn direction="right">
-                    <div className="sticky top-40">
+                  <div className="sticky top-40">
                     <div className="w-12 h-1 bg-accent-gold mb-8"></div>
                     <h2 className="text-4xl md:text-6xl font-extrabold tracking-tighter mb-8 leading-none text-slate-900">
-                        {tWhyUs('title_part1')} <br/> <span className="text-slate-400">{tWhyUs('title_part2')}</span>
+                      {tWhyUs('title_part1')} <br /> <span className="text-slate-400">{tWhyUs('title_part2')}</span>
                     </h2>
                     <p className="text-lg text-slate-500 leading-relaxed mb-12 max-w-md">
-                        {tWhyUs('description')}
+                      {tWhyUs('description')}
                     </p>
                     <Link href="/services" className="text-xs font-bold uppercase tracking-widest border-b border-black pb-2 hover:text-accent-gold hover:border-accent-gold transition-colors text-slate-900">
-                        {tWhyUs('cta')}
+                      {tWhyUs('cta')}
                     </Link>
-                    </div>
+                  </div>
                 </FadeIn>
               </div>
               <div className="lg:col-span-7 grid gap-20">
                 <FadeIn delay={0.2}>
-                    <div className="group border-t border-slate-200 pt-10">
-                        <span className="text-accent-gold text-xs font-bold mb-4 block">01</span>
-                        <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-gold transition-colors text-slate-900">{tWhyUs('items.eco.title')}</h3>
-                        <p className="text-slate-500 mb-8 max-w-md">{tWhyUs('items.eco.desc')}</p>
-                    </div>
+                  <div className="group border-t border-slate-200 pt-10">
+                    <span className="text-accent-gold text-xs font-bold mb-4 block">01</span>
+                    <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-gold transition-colors text-slate-900">{tWhyUs('items.eco.title')}</h3>
+                    <p className="text-slate-500 mb-8 max-w-md">{tWhyUs('items.eco.desc')}</p>
+                  </div>
                 </FadeIn>
                 <FadeIn delay={0.4}>
-                    <div className="group border-t border-slate-200 pt-10">
-                        <span className="text-accent-gold text-xs font-bold mb-4 block">02</span>
-                        <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-gold transition-colors text-slate-900">{tWhyUs('items.support.title')}</h3>
-                        <p className="text-slate-500 mb-8 max-w-md">{tWhyUs('items.support.desc')}</p>
-                    </div>
+                  <div className="group border-t border-slate-200 pt-10">
+                    <span className="text-accent-gold text-xs font-bold mb-4 block">02</span>
+                    <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-gold transition-colors text-slate-900">{tWhyUs('items.support.title')}</h3>
+                    <p className="text-slate-500 mb-8 max-w-md">{tWhyUs('items.support.desc')}</p>
+                  </div>
                 </FadeIn>
                 <FadeIn delay={0.6}>
-                    <div className="group border-t border-slate-200 pt-10">
-                        <span className="text-accent-gold text-xs font-bold mb-4 block">03</span>
-                        <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-gold transition-colors text-slate-900">{tWhyUs('items.expert.title')}</h3>
-                        <p className="text-slate-500 mb-8 max-w-md">{tWhyUs('items.expert.desc')}</p>
-                    </div>
+                  <div className="group border-t border-slate-200 pt-10">
+                    <span className="text-accent-gold text-xs font-bold mb-4 block">03</span>
+                    <h3 className="text-2xl font-bold mb-4 group-hover:text-accent-gold transition-colors text-slate-900">{tWhyUs('items.expert.title')}</h3>
+                    <p className="text-slate-500 mb-8 max-w-md">{tWhyUs('items.expert.desc')}</p>
+                  </div>
                 </FadeIn>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-white/10">
                 <div>
                   <span className="block text-[10px] text-white/40 uppercase tracking-widest mb-2">{tNextSteps('call')}</span>
-                  <span className="text-white text-lg font-bold">1-800-RBA-CLEAN</span>
+                  <span className="text-white text-lg font-bold">+1 514-623-0791</span>
                 </div>
                 <div>
                   <span className="block text-[10px] text-white/40 uppercase tracking-widest mb-2">{tNextSteps('email')}</span>
@@ -165,7 +165,7 @@ export default function Home() {
                 <iframe
                   src="https://api.vakaks.com/widget/form/qPdmJPKqxsM8YSxTSIKl"
                   style={{ width: '100%', height: '632px', border: 'none', borderRadius: '8px' }}
-                  id="inline-qPdmJPKqxsM8YSxTSIKl" 
+                  id="inline-qPdmJPKqxsM8YSxTSIKl"
                   data-layout="{'id':'INLINE'}"
                   data-trigger-type="alwaysShow"
                   data-trigger-value=""

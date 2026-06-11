@@ -183,7 +183,7 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-white/10">
 <div>
 <span class="block text-[10px] text-white/40 uppercase tracking-widest mb-2">Call Us</span>
-<span class="text-white text-lg font-bold">1-800-RBA-CLEAN</span>
+<span class="text-white text-lg font-bold">+1 514-623-0791</span>
 </div>
 <div>
 <span class="block text-[10px] text-white/40 uppercase tracking-widest mb-2">Email Us</span>

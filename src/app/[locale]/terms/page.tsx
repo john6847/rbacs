@@ -48,7 +48,7 @@ export default function TermsOfService() {
                     text: "For questions or comments regarding these Terms of Service, please contact us at:",
                     details: {
                         email: "Email: contact@rbacommercialservices.com",
-                        phone: "Phone: 1-800-RBA-CLEAN",
+                        phone: "Phone: +1 514-623-0791",
                         address: "Address: 8360 rue birnam, Montreal, QC, Canada"
                     }
                 }
@@ -92,7 +92,7 @@ export default function TermsOfService() {
                     text: "Pour toute question ou commentaire concernant ces conditions d'utilisation, veuillez nous contacter à :",
                     details: {
                         email: "Courriel : contact@rbacommercialservices.com",
-                        phone: "Téléphone : 1-800-RBA-CLEAN",
+                        phone: "Téléphone : +1 514-623-0791",
                         address: "Adresse : 8360 rue birnam, Montreal, QC, Canada"
                     }
                 }
@@ -136,7 +136,7 @@ export default function TermsOfService() {
                     text: "Para preguntas o comentarios sobre estos Términos de Servicio, contáctenos en:",
                     details: {
                         email: "Correo electrónico: contact@rbacommercialservices.com",
-                        phone: "Teléfono: 1-800-RBA-CLEAN",
+                        phone: "Teléfono: +1 514-623-0791",
                         address: "Dirección: 8360 rue birnam, Montreal, QC, Canada"
                     }
                 }
