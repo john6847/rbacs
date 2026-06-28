@@ -53,8 +53,8 @@ export default function Footer() {
                     <div>
                         <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] mb-8 text-black">{t('headings.compliance')}</h4>
                         <div className="flex flex-wrap gap-6 opacity-30 grayscale">
-                            <span className="material-symbols-outlined text-3xl">energy_savings_leaf</span>
-                            <span className="material-symbols-outlined text-3xl">eco</span>
+                            <span className="material-symbols-outlined text-3xl">verified_user</span>
+                            <span className="material-symbols-outlined text-3xl">gpp_good</span>
                             <span className="material-symbols-outlined text-3xl">security</span>
                         </div>
                     </div>

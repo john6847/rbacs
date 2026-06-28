@@ -13,10 +13,6 @@
         "description": "Chez RBA Commercial Services, nous croyons qu'un lieu de travail propre reflète votre professionnalisme via un personnel formé, des résultats constants et une attention aux détails.",
         "cta": "En Savoir Plus",
         "items": {
-            "eco": {
-                "title": "Éco-Certifié",
-                "desc": "Produits chimiques exclusivement verts et méthodes durables pour un espace de travail plus sain."
-            },
             "support": {
                 "title": "Priorité 24/7",
                 "desc": "Équipe d'intervention rapide disponible 24h/24 pour gérer les urgences sans interruption."
@@ -80,10 +76,6 @@
             "insured": {
                 "title": "Entièrement assuré",
                 "desc": "Couverture responsabilité et opérations professionnelles en qui vous pouvez avoir confiance."
-            },
-            "eco": {
-                "title": "Options écologiques",
-                "desc": "Produits de nettoyage verts disponibles pour un milieu de travail plus sain."
             },
             "quality": {
                 "title": "Axé sur la qualité",
@@ -253,10 +245,6 @@
             "title": "Support prioritaire 24/7",
             "desc": "Gestionnaire d'installations dédié avec répartition d'urgence rapide."
         },
-        "eco": {
-            "title": "100% Éco-Certifié",
-            "desc": "Composés certifiés verts sans danger pour les employés et la planète."
-        },
         "standards": {
             "title": "Conforme OSHA & ISO",
             "desc": "Stricte conformité aux réglementations canadiennes d'hygiène et de sécurité."
@@ -276,7 +264,7 @@
             "Désinfection complète des surfaces à contact fréquent (poignées, interrupteurs, claviers)",
             "Aspiration avec filtre HEPA des tapis et stérilisation des moquettes",
             "Polissage et organisation des surfaces de bureaux exécutifs",
-            "Dépoussiérage écologique et assainissement de l'air intérieur",
+            "Dépoussiérage minutieux et assainissement de l'air intérieur",
             "Désinfection des sanitaires et désodorisation biologique"
         ],
         "medical": [
@@ -302,7 +290,7 @@
         ]
     },
     "Footer": {
-        "description": "Le choix du Canada pour un nettoyage commercial éco-responsable. L'excellence dans chaque coin, la fiabilité à chaque visite.",
+        "description": "Le choix du Canada pour un nettoyage commercial professionnel. L'excellence dans chaque coin, la fiabilité à chaque visite.",
         "headings": {
             "services": "Services",
             "company": "Entreprise",
@@ -338,7 +326,7 @@
         },
         "services": {
             "title": "Services de nettoyage commercial | Bureaux, cliniques, commerces, après-construction",
-            "description": "Services de nettoyage commercial sur mesure à Montréal : bureaux, désinfection de cliniques, commerces et nettoyage après construction. Assurés, fiables, éco-responsables."
+            "description": "Services de nettoyage commercial sur mesure à Montréal : bureaux, désinfection de cliniques, commerces et nettoyage après construction. Assurés, fiables, minutieux."
         },
         "contact": {
             "title": "Contactez RBA Commercial Services | Soumission gratuite",

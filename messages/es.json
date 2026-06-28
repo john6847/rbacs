@@ -13,10 +13,6 @@
         "description": "En RBA Commercial Services, creemos que un lugar de trabajo limpio refleja su profesionalismo. Nuestro equipo capacitado ofrece resultados consistentes y atención al detalle.",
         "cta": "Saber Más",
         "items": {
-            "eco": {
-                "title": "Eco-Certificado",
-                "desc": "Productos químicos exclusivamente ecológicos y métodos sostenibles para un espacio de trabajo más saludable."
-            },
             "support": {
                 "title": "Prioridad 24/7",
                 "desc": "Equipo de respuesta rápida disponible las 24 horas para manejar emergencias sin tiempo de inactividad."
@@ -80,10 +76,6 @@
             "insured": {
                 "title": "Totalmente asegurado",
                 "desc": "Cobertura de responsabilidad y operaciones profesionales en las que puede confiar."
-            },
-            "eco": {
-                "title": "Opciones ecológicas",
-                "desc": "Productos de limpieza verdes disponibles para un lugar de trabajo más saludable."
             },
             "quality": {
                 "title": "Enfocado en calidad",
@@ -253,10 +245,6 @@
             "title": "Soporte Prioritario 24/7",
             "desc": "Administrador de instalaciones dedicado con despacho de emergencia rápido."
         },
-        "eco": {
-            "title": "100% Eco-Certificado",
-            "desc": "Compuestos certificados ecológicos seguros para empleados y el planeta."
-        },
         "standards": {
             "title": "Conforme con OSHA e ISO",
             "desc": "Estricta conformidad con las regulaciones canadienses de higiene y seguridad."
@@ -276,7 +264,7 @@
             "Desinfección completa de superficies de alto contacto (pomos, interruptores, teclados)",
             "Aspiración con filtro HEPA de alfombras y esterilización de tapetes",
             "Pulido y organización de superficies de escritorios ejecutivos",
-            "Control de polvo ecológico y purificación del aire interior",
+            "Control de polvo minucioso y purificación del aire interior",
             "Desinfección de baños y desodorización biológica"
         ],
         "medical": [
@@ -302,7 +290,7 @@
         ]
     },
     "Footer": {
-        "description": "La elección de Canadá para la limpieza comercial ecológica. Excelencia en cada rincón, fiabilidad en cada visita.",
+        "description": "La elección de Canadá para la limpieza comercial profesional. Excelencia en cada rincón, fiabilidad en cada visita.",
         "headings": {
             "services": "Servicios",
             "company": "Empresa",
@@ -338,7 +326,7 @@
         },
         "services": {
             "title": "Servicios de limpieza comercial | Oficinas, clínicas, comercios y postobra",
-            "description": "Servicios de limpieza comercial a medida en Montreal: oficinas, desinfección de clínicas, comercios y limpieza postobra. Asegurados, confiables y ecológicos."
+            "description": "Servicios de limpieza comercial a medida en Montreal: oficinas, desinfección de clínicas, comercios y limpieza postobra. Asegurados, confiables y meticulosos."
         },
         "contact": {
             "title": "Contacte a RBA Commercial Services | Presupuesto gratis",

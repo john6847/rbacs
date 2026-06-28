@@ -13,7 +13,6 @@ export default function About() {
     const commitments = [
         { key: 'reliable', icon: 'event_available' },
         { key: 'insured', icon: 'verified_user' },
-        { key: 'eco', icon: 'energy_savings_leaf' },
         { key: 'quality', icon: 'fact_check' },
     ] as const;
 

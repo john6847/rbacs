@@ -100,20 +100,13 @@ export default function Home() {
                                 <FadeIn delay={0.2}>
                                     <div className="group border-t border-slate-200 pt-10 hover:border-primary transition-colors duration-300">
                                         <span className="text-accent-gold text-xs font-bold mb-4 block">01</span>
-                                        <h3 className="text-2xl font-bold mb-4 text-slate-900 group-hover:text-primary transition-colors">{tWhyUs('items.eco.title')}</h3>
-                                        <p className="text-slate-500 mb-8 max-w-md font-light leading-relaxed">{tWhyUs('items.eco.desc')}</p>
+                                        <h3 className="text-2xl font-bold mb-4 text-slate-900 group-hover:text-primary transition-colors">{tWhyUs('items.support.title')}</h3>
+                                        <p className="text-slate-500 mb-8 max-w-md font-light leading-relaxed">{tWhyUs('items.support.desc')}</p>
                                     </div>
                                 </FadeIn>
                                 <FadeIn delay={0.4}>
                                     <div className="group border-t border-slate-200 pt-10 hover:border-primary transition-colors duration-300">
                                         <span className="text-accent-gold text-xs font-bold mb-4 block">02</span>
-                                        <h3 className="text-2xl font-bold mb-4 text-slate-900 group-hover:text-primary transition-colors">{tWhyUs('items.support.title')}</h3>
-                                        <p className="text-slate-500 mb-8 max-w-md font-light leading-relaxed">{tWhyUs('items.support.desc')}</p>
-                                    </div>
-                                </FadeIn>
-                                <FadeIn delay={0.6}>
-                                    <div className="group border-t border-slate-200 pt-10 hover:border-primary transition-colors duration-300">
-                                        <span className="text-accent-gold text-xs font-bold mb-4 block">03</span>
                                         <h3 className="text-2xl font-bold mb-4 text-slate-900 group-hover:text-primary transition-colors">{tWhyUs('items.expert.title')}</h3>
                                         <p className="text-slate-500 mb-8 max-w-md font-light leading-relaxed">{tWhyUs('items.expert.desc')}</p>
                                     </div>

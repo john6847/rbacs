@@ -14,7 +14,6 @@ export default function Contact() {
     const guaranteesList = [
         { key: 'insured', icon: 'verified_user' },
         { key: 'support', icon: 'support_agent' },
-        { key: 'eco', icon: 'energy_savings_leaf' },
         { key: 'standards', icon: 'gpp_good' }
     ];
 

@@ -13,10 +13,6 @@
         "description": "At RBA Commercial Services, we believe a clean workplace reflects your professionalism. Our trained cleaning specialists deliver consistent results, reliable scheduling, and attention to detail — every visit, every space.",
         "cta": "Learn More",
         "items": {
-            "eco": {
-                "title": "Eco-Friendly",
-                "desc": "Eco-conscious products available for a safer, healthier workplace environment."
-            },
             "support": {
                 "title": "Reliable Service",
                 "desc": "Detail-oriented cleaning standards with flexible scheduling to suit your needs."
@@ -80,10 +76,6 @@
             "insured": {
                 "title": "Fully Insured",
                 "desc": "Liability coverage and professional operations you can trust."
-            },
-            "eco": {
-                "title": "Eco-Conscious Options",
-                "desc": "Green cleaning products available for a healthier workplace."
             },
             "quality": {
                 "title": "Quality-Focused",
@@ -253,10 +245,6 @@
             "title": "24/7 Priority Support",
             "desc": "Dedicated facilities manager with rapid emergency dispatch."
         },
-        "eco": {
-            "title": "100% Eco-Certified",
-            "desc": "Green-certified compounds safe for employees and the planet."
-        },
         "standards": {
             "title": "OSHA & ISO Compliant",
             "desc": "Strict conformance to Canadian hygiene and safety regulations."
@@ -276,7 +264,7 @@
             "Complete disinfection of high-touch surfaces (doorknobs, switches, keyboards)",
             "HEPA-filter vacuuming of carpets and rug sterilization",
             "Executive desk surface polishing and organization",
-            "Eco-friendly dust control and indoor air-purification sweep",
+            "Thorough dust control and indoor air-purification sweep",
             "Restroom sanitation and biological deodorization"
         ],
         "medical": [
@@ -338,7 +326,7 @@
         },
         "services": {
             "title": "Commercial Cleaning Services | Office, Medical, Retail & Post-Construction",
-            "description": "Tailored commercial cleaning services in Montreal: office cleaning, medical clinic disinfection, retail cleaning, and post-construction cleanup. Insured, reliable, eco-conscious."
+            "description": "Tailored commercial cleaning services in Montreal: office cleaning, medical clinic disinfection, retail cleaning, and post-construction cleanup. Insured, reliable, detail-focused."
         },
         "contact": {
             "title": "Contact RBA Commercial Services | Free Cleaning Quote",

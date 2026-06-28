@@ -447,9 +447,9 @@ export const areas: Area[] = [
               'Absolutely. We schedule around your hours and train crews to work quietly and professionally in client-facing Westmount environments.',
           },
           {
-            question: 'Do you use eco-friendly products in Westmount?',
+            question: 'Do you offer flexible scheduling for Westmount offices?',
             answer:
-              'Yes — green-certified, eco-conscious products are available for a healthier, safer workplace on request.',
+              'Yes — we work around your hours with evening and weekend options, so cleaning never disrupts your staff or clients.',
           },
         ],
       },
@@ -476,9 +476,9 @@ export const areas: Area[] = [
               'Tout à fait. Nous planifions selon vos heures et formons les équipes à travailler discrètement dans les environnements de Westmount.',
           },
           {
-            question: 'Utilisez-vous des produits écologiques à Westmount ?',
+            question: 'Offrez-vous des horaires flexibles pour les bureaux de Westmount ?',
             answer:
-              'Oui — des produits certifiés écologiques sont disponibles sur demande pour un milieu de travail plus sain.',
+              'Oui — nous nous adaptons à vos heures avec des options en soirée et la fin de semaine, sans jamais déranger votre personnel ni vos clients.',
           },
         ],
       },
@@ -505,9 +505,9 @@ export const areas: Area[] = [
               'Por supuesto. Programamos según su horario y capacitamos a los equipos para trabajar discretamente en entornos de Westmount.',
           },
           {
-            question: '¿Usan productos ecológicos en Westmount?',
+            question: '¿Ofrecen horarios flexibles para oficinas en Westmount?',
             answer:
-              'Sí: hay productos certificados ecológicos disponibles a pedido para un lugar de trabajo más saludable.',
+              'Sí: nos adaptamos a su horario con opciones de noche y fin de semana, sin interrumpir a su personal ni a sus clientes.',
           },
         ],
       },
