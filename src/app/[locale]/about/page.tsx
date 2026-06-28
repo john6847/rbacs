@@ -10,152 +10,183 @@ import FadeIn from '@/components/FadeIn';
 export default function About() {
     const t = useTranslations('About');
 
+    const commitments = [
+        { key: 'reliable', icon: 'event_available' },
+        { key: 'insured', icon: 'verified_user' },
+        { key: 'eco', icon: 'energy_savings_leaf' },
+        { key: 'quality', icon: 'fact_check' },
+    ] as const;
+
+    const values = [
+        { key: 'integrity', num: '01' },
+        { key: 'excellence', num: '02' },
+        { key: 'sustainability', num: '03' },
+    ] as const;
+
     return (
         <>
             <Navbar />
-            <main>
-                {/* Hero Section */}
-                <section className="pt-48 pb-24 px-6 md:px-12 max-w-[1800px] mx-auto w-full">
+            <main className="bg-rba-gray min-h-screen">
+
+                {/* Hero */}
+                <section className="pt-40 pb-20 px-6 lg:px-12 max-w-[1800px] mx-auto">
                     <div className="max-w-4xl">
-                        <FadeIn isActive={true} delay={0.1}>
-                            <span className="text-xs font-bold uppercase tracking-[0.3em] text-primary mb-6 block">{t('hero_title')}</span>
+                        <FadeIn delay={0.1}>
+                            <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-primary mb-6">
+                                {t('hero_title')}
+                            </span>
                         </FadeIn>
-                        <FadeIn isActive={true} delay={0.2}>
-                            <h1 className="serif-display text-6xl md:text-8xl font-light tracking-tight leading-none mb-8">
-                                {t('hero_subtitle')} <br />
-                                <span className="italic font-medium text-primary">Elite Commercial Care.</span>
+                        <FadeIn delay={0.2}>
+                            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter leading-none mb-8 text-slate-900">
+                                {t('hero_subtitle')}{' '}
+                                <span className="serif-italic font-normal lowercase text-primary">{t('hero_highlight')}</span>
                             </h1>
                         </FadeIn>
-                        <FadeIn isActive={true} delay={0.4}>
-                            <p className="text-xl md:text-2xl font-light text-gray-500 leading-relaxed max-w-2xl">
+                        <FadeIn delay={0.3}>
+                            <p className="text-xl md:text-2xl text-slate-500 font-light max-w-2xl leading-relaxed">
                                 {t('hero_desc')}
                             </p>
                         </FadeIn>
                     </div>
                 </section>
 
-                {/* Legacy Section */}
-                <section className="py-32 px-6 md:px-12 bg-rba-gray border-y border-slate-100">
-                    <div className="max-w-[1800px] mx-auto">
-                        <div className="asymmetric-grid">
-                            <div className="col-span-12 md:col-span-4 flex flex-col justify-center mb-12 md:mb-0">
-                                <h2 className="serif-display text-5xl italic mb-8">{t('legacy_title')}</h2>
-                                <p className="text-gray-600 leading-relaxed mb-6">
-                                    {t('legacy_desc1')}
-                                </p>
-                                <p className="text-gray-600 leading-relaxed">
-                                    {t('legacy_desc2')}
-                                </p>
-                            </div>
-                            <div className="col-span-12 md:col-span-8">
-                                <div className="aspect-[16/9] bg-gray-200 overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl shadow-black/5">
-                                    <img alt="Modern Architecture" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLWy4w4KYQwvNoK36a7EhHJuldvucjalOn3v8hjPxexVEK2PTMZnlvV1hhZ9Yvqz_sbV4zrf_hjDWj4khox2MrECed9nVgzvF5xgqoIVFFD1kVsxTjNL4qColB-un9f106d-UiFQcjsCKoPot_XyM4VMZBPJNJDFlr1I4djddul1V2C6XFhThAmThEYU5YYJytHcyWMXM5LVHWw8GcEFeYRklzZa4iyGHbPhnpRpWJu47MuNsV-xN5BwTr_Vgv9ZgSgikOluZGHoo" />
-                                </div>
-                            </div>
-                            <div className="col-span-12 md:col-span-7 mt-0 md:mt-24">
-                                <div className="aspect-[4/3] bg-gray-200 overflow-hidden rounded-sm shadow-xl">
-                                    <img alt="Professional Crew" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqwhUdD0yaYBDstg2IicYvgpwJh3ITdn3OyGzqXSPHuH72BkqF3vSlSuzJT2JdXxBl64PmZwKmE3NJKYi-C3Wc4ivRu7Keb-9Gks7Th2HTmo390HcdaHJH1Prwwc0zD2Lkf5F-1HX-XN7lZDS5f8qnO7Il5lyP740Cd7lpV2q3zaOZDJ3w1QjuiUqbNmfOA2SB0Mf90FR1lm3b8rF-Muf1SOA0qR2256CISwe_qtkqEU9DqHA5d1nPJfEA18kFq_fDIWOFy6wyp7s" />
-                                </div>
-                            </div>
-                            <div className="col-span-12 md:col-span-5 md:mt-48 flex flex-col justify-start">
-                                <div className="pl-0 md:pl-12 border-l-0 md:border-l border-gray-200">
-                                    <h3 className="serif-display text-4xl mb-6">{t('mission_headline')} <span className="italic font-medium">{t('mission_highlight')}</span></h3>
-                                    <p className="text-gray-500 text-lg leading-relaxed italic mb-8">"{t('mission_quote')}"</p>
-                                    <div className="aspect-square w-full bg-gray-100 rounded-sm overflow-hidden">
-                                        <img alt="Details" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcaC5wPpkj_5Br2xKH7ih30-sRMig0X2NLyRNf_bBFhpIjq2gLCB6ojWA-Z7Qtk44j3YS5Zz3uT_JEPtdMSB9oBMa0CZbwAzyQcgYRVUAmUoss52Yy1n3K_DcaDjDFlsD7rKy22U_L1cmRZO4YWVsjY1LHIENdfW-1RPQeseI01HMREjuHxl7Us59_pe-iAHe9OJDyJKJAsI3uOg8_0Ak7chucoz6eu5SpUA_OAIOgtDMKu4VgXJ5WkrWkvW5noJEL2aeIF17s_yo" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Values Section */}
-                <section className="py-40 px-6 md:px-12 bg-white">
-                    <div className="max-w-[1800px] mx-auto">
-                        <div className="flex flex-col md:flex-row justify-between items-baseline mb-32 border-b border-gray-100 pb-12">
-                            <h2 className="serif-display text-6xl italic text-slate-900">The Elite Difference</h2>
-                            <span className="text-xs font-bold uppercase tracking-widest text-gray-400 mt-4 md:mt-0">{t('values_title')} 01—03</span>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8">
-                            <div className="group">
-                                <span className="block text-[80px] font-thin serif-display leading-none mb-8 text-slate-100 group-hover:text-primary transition-colors duration-500 italic">01.</span>
-                                <h4 className="text-sm font-bold uppercase tracking-widest mb-4 text-slate-900">{t('values.integrity.title')}</h4>
-                                <p className="text-gray-500 font-light leading-relaxed">{t('values.integrity.desc')}</p>
-                            </div>
-                            <div className="group">
-                                <span className="block text-[80px] font-thin serif-display leading-none mb-8 text-slate-100 group-hover:text-primary transition-colors duration-500 italic">02.</span>
-                                <h4 className="text-sm font-bold uppercase tracking-widest mb-4 text-slate-900">{t('values.excellence.title')}</h4>
-                                <p className="text-gray-500 font-light leading-relaxed">{t('values.excellence.desc')}</p>
-                            </div>
-                            <div className="group">
-                                <span className="block text-[80px] font-thin serif-display leading-none mb-8 text-slate-100 group-hover:text-primary transition-colors duration-500 italic">03.</span>
-                                <h4 className="text-sm font-bold uppercase tracking-widest mb-4 text-slate-900">{t('values.sustainability.title')}</h4>
-                                <p className="text-gray-500 font-light leading-relaxed">{t('values.sustainability.desc')}</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Team Section */}
-                <section className="hidden py-40 px-6 md:px-12 bg-rba-dark text-white">
-                    <div className="max-w-[1800px] mx-auto">
-                        <FadeIn isActive={true} delay={0.1}>
-                            <div className="mb-32 max-w-2xl">
-                                <span className="text-accent-gold font-bold tracking-[0.3em] uppercase text-xs mb-6 block">{t('team_title')}</span>
-                                <h2 className="serif-display text-5xl md:text-7xl font-light italic leading-tight">{t('team_desc')}</h2>
+                {/* Story */}
+                <section className="py-24 px-6 lg:px-12 bg-white border-y border-slate-100">
+                    <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                        <FadeIn direction="right">
+                            <div>
+                                <span className="text-xs font-bold uppercase tracking-[0.3em] text-primary mb-4 block">
+                                    {t('story_label')}
+                                </span>
+                                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter text-slate-900 mb-8 leading-tight">
+                                    {t('story_title_part1')}{' '}
+                                    <span className="text-primary italic-serif font-light">{t('story_title_part2')}</span>
+                                </h2>
+                                <p className="text-slate-500 font-light leading-relaxed mb-6">{t('story_desc1')}</p>
+                                <p className="text-slate-500 font-light leading-relaxed">{t('story_desc2')}</p>
                             </div>
                         </FadeIn>
-                        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 items-start">
-                            <div className="md:col-span-4 group">
-                                <div className="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700 mb-8 border border-white/5 shadow-2xl">
-                                    <img alt="CEO" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBms1JA2h65DjrOrx3vnbTzxak201_Izl86MSzdWHoiG0-PMf79pJkn5tD9MehBee-F8kbAFq8557ka6Bej_TDtiYRzpYvWO9Cdw1hIAnOfbsp9yP-36qNa8WK6am7iTJ5dJUEHOfnPecP8EDWmuIi4wI6yV-Ba7GJMOz-4kPw5oA9pMXwpGMRQauwS5CaD17RpXJD_2KtecdfME4rVlwyZ0RK5CvRH46E6RZ0fNEaEaOJNCz0EVKRAX_0SkaaZjKSXbzIDx-lgfrU" />
-                                </div>
-                                <div className="flex items-end justify-between border-t border-white/10 pt-4">
-                                    <div>
-                                        <h4 className="serif-display text-3xl font-light italic text-white group-hover:text-accent-gold transition-colors">Michael Rossi</h4>
-                                        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 mt-2">Founder & CEO</p>
-                                    </div>
-                                </div>
+                        <FadeIn delay={0.2}>
+                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl shadow-slate-200/60">
+                                <img
+                                    alt="Commercial office space"
+                                    className="w-full h-full object-cover"
+                                    src="/office.jpg"
+                                />
                             </div>
-                            <div className="md:col-span-4 md:mt-24 group">
-                                <div className="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700 mb-8 border border-white/5 shadow-2xl">
-                                    <img alt="COO" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFeTu0xGp06Nx6cl2oPphcTHJZNBeeYI06nlTVujBkR5EdvOSxdkwOvN6H3QUx0280_AaKOJ5XiVZg_orDIsFLZFysYvuaFXSeWpQogN4uQ22wnWTH-aw3WmI5lSnS1l5h7NXM1ikrlL1CDvB-lH_EJHpv-0idW06k-O0dVUuBukHANJQNawxbOJ1SH81f4Wn9msOpSCfpn0nmD9PDY6TKv7dJQdnfgMifNId7VK5gpYW0slrKqohv_VWeJWnbzVsn8aIPodHhT6U" />
-                                </div>
-                                <div className="flex items-end justify-between border-t border-white/10 pt-4">
-                                    <div>
-                                        <h4 className="serif-display text-3xl font-light italic text-white group-hover:text-accent-gold transition-colors">Sarah Jenkins</h4>
-                                        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 mt-2">Operations Director</p>
-                                    </div>
-                                </div>
+                        </FadeIn>
+                    </div>
+                </section>
+
+                {/* Mission */}
+                <section className="bg-primary text-white py-24 px-6 lg:px-12">
+                    <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <FadeIn>
+                            <span className="text-xs font-bold uppercase tracking-[0.3em] text-white/50 mb-4 block">
+                                {t('mission_label')}
+                            </span>
+                            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter mb-6 leading-tight">
+                                {t('mission_headline')}{' '}
+                                <span className="italic-serif font-light">{t('mission_highlight')}</span>
+                            </h2>
+                            <p className="text-white/70 font-light leading-relaxed text-lg">{t('mission_desc')}</p>
+                        </FadeIn>
+                        <FadeIn delay={0.2}>
+                            <blockquote className="border-l-2 border-white/20 pl-8">
+                                <p className="text-xl md:text-2xl font-light italic leading-relaxed text-white/90">
+                                    &ldquo;{t('mission_quote')}&rdquo;
+                                </p>
+                            </blockquote>
+                        </FadeIn>
+                    </div>
+                </section>
+
+                {/* Commitments */}
+                <section className="py-24 px-6 lg:px-12">
+                    <div className="max-w-[1400px] mx-auto">
+                        <FadeIn>
+                            <div className="text-center mb-16 max-w-2xl mx-auto">
+                                <span className="text-xs font-bold uppercase tracking-[0.3em] text-primary mb-4 block">
+                                    {t('commitments_label')}
+                                </span>
+                                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter text-slate-900">
+                                    {t('commitments_title')}
+                                </h2>
                             </div>
-                            <div className="md:col-span-4 md:mt-48 group">
-                                <div className="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700 mb-8 border border-white/5 shadow-2xl">
-                                    <img alt="Quality" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMY9ivN5ibes1RABQlSTqxP-y2d3tOxbIEXqXdzoqPA_J7SQAYb4OrqVRsMdy_eNNtQR3LZtoDSwRw1Dfw20mIxcJcFiTgssSWYrO88PhL4GyXl1kxqBckM9Ouh3LQXk5ZiKLE0YB5HdgUI183RmgMlpHsVeWvVdRwpenMm480cz99i3Q9NPnsAh2KfllbCoMRTLc-V63iLLu09j6-Sv0HXwFyGedI1dCLSgu5Zc501QpCFxD-vl6F0EZHdyRa3CfHNc_Sc5G6B-k" />
-                                </div>
-                                <div className="flex items-end justify-between border-t border-white/10 pt-4">
-                                    <div>
-                                        <h4 className="serif-display text-3xl font-light italic text-white group-hover:text-accent-gold transition-colors">David Park</h4>
-                                        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 mt-2">Head of Quality</p>
+                        </FadeIn>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                            {commitments.map((item, index) => (
+                                <FadeIn key={item.key} delay={0.1 * (index + 1)}>
+                                    <div className="bg-white rounded-2xl border border-slate-100 p-8 h-full hover:border-primary/20 hover:shadow-lg transition-all duration-300">
+                                        <div className="w-12 h-12 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6">
+                                            <span className="material-symbols-outlined text-2xl">{item.icon}</span>
+                                        </div>
+                                        <h3 className="text-sm font-bold uppercase tracking-widest text-slate-900 mb-3">
+                                            {t(`commitments.${item.key}.title`)}
+                                        </h3>
+                                        <p className="text-sm text-slate-500 font-light leading-relaxed">
+                                            {t(`commitments.${item.key}.desc`)}
+                                        </p>
                                     </div>
-                                </div>
-                            </div>
+                                </FadeIn>
+                            ))}
                         </div>
                     </div>
                 </section>
 
-                {/* CTA Section */}
-                <section className="bg-primary text-white py-32 px-6 md:px-12 relative overflow-hidden">
-                    <div className="max-w-[1800px] mx-auto relative z-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-12">
-                        <div>
-                            <h2 className="serif-display text-5xl md:text-7xl italic font-light mb-6">Ready for <span className="text-white/40">the elite?</span></h2>
-                            <p className="text-xl md:text-2xl font-light opacity-80 max-w-xl">Join the roster of Canada&apos;s most prestigious corporate environments.</p>
+                {/* Values */}
+                <section className="py-24 px-6 lg:px-12 bg-white border-t border-slate-100">
+                    <div className="max-w-[1400px] mx-auto">
+                        <FadeIn>
+                            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 pb-12 border-b border-slate-100">
+                                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter text-slate-900">
+                                    {t('values_heading')}
+                                </h2>
+                                <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
+                                    {t('values_title')}
+                                </span>
+                            </div>
+                        </FadeIn>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+                            {values.map((item, index) => (
+                                <FadeIn key={item.key} delay={0.1 * (index + 1)}>
+                                    <div className="group">
+                                        <span className="block text-5xl font-extrabold text-slate-100 group-hover:text-primary/20 transition-colors duration-500 mb-6">
+                                            {item.num}
+                                        </span>
+                                        <h3 className="text-sm font-bold uppercase tracking-widest mb-4 text-slate-900">
+                                            {t(`values.${item.key}.title`)}
+                                        </h3>
+                                        <p className="text-slate-500 font-light leading-relaxed">
+                                            {t(`values.${item.key}.desc`)}
+                                        </p>
+                                    </div>
+                                </FadeIn>
+                            ))}
                         </div>
-                        <Link href="/contact" className="bg-white text-primary px-12 py-6 rounded-full text-xs font-bold uppercase tracking-widest hover:scale-105 hover:bg-accent-gold hover:text-white transition-all shadow-2xl block text-center">
-                            {t('cta_button')}
-                        </Link>
                     </div>
-                    <div className="absolute top-0 right-0 w-[50%] h-full bg-white/5 -skew-x-12 translate-x-1/2"></div>
+                </section>
+
+                {/* CTA */}
+                <section className="bg-rba-dark text-white py-28 px-6 lg:px-12">
+                    <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
+                        <FadeIn>
+                            <h2 className="text-4xl md:text-6xl font-extrabold tracking-tighter mb-6 leading-tight">
+                                {t('cta_title_part1')}{' '}
+                                <span className="italic-serif font-light text-accent-gold">{t('cta_title_part2')}</span>
+                            </h2>
+                            <p className="text-white/60 text-lg font-light max-w-xl leading-relaxed">{t('cta_desc')}</p>
+                        </FadeIn>
+                        <FadeIn delay={0.2}>
+                            <Link
+                                href="/contact"
+                                className="inline-flex items-center gap-2 bg-white text-slate-900 px-12 py-6 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-accent-gold hover:text-white transition-all shadow-2xl whitespace-nowrap"
+                            >
+                                {t('cta_button')}
+                                <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                            </Link>
+                        </FadeIn>
+                    </div>
                 </section>
             </main>
             <Footer />

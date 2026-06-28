@@ -50,40 +50,66 @@
         "experience": "Experiencia",
         "philosophy": "Filosofía",
         "testimonials": "Testimonios",
+        "areas": "Zonas",
+        "blog": "Blog",
         "contact": "Contacto",
         "inquire": "Consultar"
     },
     "About": {
-        "hero_title": "NUESTRO LEGADO",
-        "hero_subtitle": "Construido en Confianza.",
-        "hero_desc": "Durante más de dos décadas, RBA Commercial Services ha establecido el estándar de excelencia en limpieza comercial. No solo limpiamos espacios; curamos ambientes que inspiran productividad y confianza.",
-        "legacy_title": "NUESTRO LEGADO",
-        "legacy_desc1": "Fundado con la visión de redefinir la limpieza comercial, RBA Commercial Services ha crecido desde ser un proveedor local hasta convertirse en un socio de confianza para empresas en todo Canadá. Nuestra trayectoria se basa en una promesa simple: ofrecer resultados impecables con una confiabilidad inquebrantable.",
-        "legacy_desc2": "A lo largo de los años, hemos perfeccionado nuestros métodos, invertido en tecnologías de limpieza ecológica de última generación y formado un equipo de profesionales altamente capacitados que comparten nuestro compromiso con la excelencia.",
-        "mission_title": "NUESTRA MISIÓN",
-        "mission_headline": "ELEVANDO los",
-        "mission_highlight": "Estándares.",
-        "mission_desc": "Proporcionar una calidad inquebrantable en el mantenimiento comercial a través de prácticas sostenibles, capacitación experta y confiabilidad.",
-        "mission_quote": "No solo limpiamos espacios de trabajo; curamos entornos que promueven la salud, inspiran la productividad y protegen la reputación de su marca.",
-        "values_title": "VALORES FUNDAMENTALES",
-        "values": {
-            "integrity": {
-                "title": "Integridad",
-                "desc": "Hacer lo correcto, incluso cuando nadie está mirando."
+        "hero_title": "Sobre RBA",
+        "hero_subtitle": "Construido en",
+        "hero_highlight": "confianza.",
+        "hero_desc": "RBA Commercial Services es una empresa de limpieza comercial con sede en Montreal, comprometida con un servicio confiable y de alta calidad para oficinas, clínicas, comercios y propiedades comerciales en todo Canadá.",
+        "story_label": "Nuestra historia",
+        "story_title_part1": "Un enfoque nuevo para la",
+        "story_title_part2": "limpieza comercial.",
+        "story_desc1": "Creamos RBA con un objetivo claro: ofrecer limpieza confiable y detallada a empresas que merecen algo mejor que un servicio inconsistente y promesas vagas.",
+        "story_desc2": "Cada instalación es diferente. Nos tomamos el tiempo de entender su espacio, su horario y sus estándares — y luego creamos un plan que realmente se adapta.",
+        "mission_label": "Nuestra misión",
+        "mission_headline": "Espacios limpios,",
+        "mission_highlight": "cero estrés.",
+        "mission_desc": "Proporcionar limpieza comercial confiable que ayude a las empresas a operar en entornos limpios, seguros y profesionales — sin interrupciones ni incertidumbre.",
+        "mission_quote": "No solo limpiamos espacios de trabajo — le ayudamos a dar la mejor impresión, en cada visita.",
+        "commitments_label": "Qué puede esperar",
+        "commitments_title": "Nuestros compromisos",
+        "commitments": {
+            "reliable": {
+                "title": "Horarios confiables",
+                "desc": "Horarios de visita consistentes y comunicación clara — sin sorpresas."
             },
-            "excellence": {
-                "title": "Excelencia",
-                "desc": "Superar constantemente los estándares de la industria."
+            "insured": {
+                "title": "Totalmente asegurado",
+                "desc": "Cobertura de responsabilidad y operaciones profesionales en las que puede confiar."
             },
-            "sustainability": {
-                "title": "Sostenibilidad",
-                "desc": "Proteger nuestro planeta con soluciones ecológicas."
+            "eco": {
+                "title": "Opciones ecológicas",
+                "desc": "Productos de limpieza verdes disponibles para un lugar de trabajo más saludable."
+            },
+            "quality": {
+                "title": "Enfocado en calidad",
+                "desc": "Listas de verificación detalladas y trabajo minucioso — sin atajos."
             }
         },
-        "team_title": "NUESTROS EXPERTOS",
-        "team_desc": "Conozca a los profesionales dedicados que aseguran que su instalación brille.",
-        "cta_title": "Únase a nuestro legado",
-        "cta_button": "Trabaje con nosotros"
+        "values_title": "Valores fundamentales",
+        "values_heading": "Lo que nos guía",
+        "values": {
+            "integrity": {
+                "title": "Confiabilidad",
+                "desc": "Llegamos a tiempo, siempre."
+            },
+            "excellence": {
+                "title": "Calidad",
+                "desc": "Limpiamos a fondo, no rápido."
+            },
+            "sustainability": {
+                "title": "Profesionalismo",
+                "desc": "Personal capacitado, operaciones aseguradas, servicio respetuoso."
+            }
+        },
+        "cta_title_part1": "¿Listo para trabajar",
+        "cta_title_part2": "con nosotros?",
+        "cta_desc": "Obtenga una cotización gratuita adaptada a su instalación. Sin presión, sin obligaciones.",
+        "cta_button": "Obtener cotización gratis"
     },
     "Services": {
         "hero_title": "NUESTRA EXPERIENCIA",
@@ -186,13 +212,105 @@
             }
         }
     },
+    "BeforeAfter": {
+        "title": "Demostración Interactiva",
+        "subtitle": "Deslice para ver nuestro estándar",
+        "description": "Arrastre el deslizador para ver la diferencia entre un espacio de trabajo desordenado y un entorno restaurado por Elite RBA.",
+        "before_label": "Área Sin Tratar",
+        "after_label": "Estándar RBA Elite"
+    },
+    "Calculator": {
+        "title": "Calculadora de Estimación Instantánea",
+        "subtitle": "Planifique su Presupuesto de Mantenimiento",
+        "facility_type": "Tipo de Instalación",
+        "select_category": "Seleccionar Categoría",
+        "scale": "Tamaño Estimado (PIES CUADRADOS)",
+        "frequency": "Frecuencia de Servicio",
+        "daily": "Mantenimiento Diario",
+        "weekly": "Protocolo Semanal",
+        "biweekly": "Cuidado Bi-Semanal",
+        "one_time": "Intensivo Único",
+        "calculate_btn": "Calcular Tarifa",
+        "estimate_title": "Costo Estimado",
+        "rate_range": "Est. ${min} - ${max} / mes",
+        "one_time_range": "Est. ${min} - ${max} una vez",
+        "disclaimer": "*Los precios son estimaciones aproximadas basadas en el tamaño. Se requiere una auditoría in situ para finalizar.",
+        "cta_book": "Reservar y bloquear tarifa",
+        "step_1": "Alcance",
+        "step_2": "Detalles",
+        "step_3": "Contacto",
+        "company": "Nombre de la Empresa",
+        "phone": "Número de Teléfono",
+        "date": "Fecha de Inicio Deseada"
+    },
+    "Guarantees": {
+        "title": "Nuestros Compromisos Profesionales",
+        "insured": {
+            "title": "Totalmente Asegurado y Vinculado",
+            "desc": "Cobertura de responsabilidad de $2 millones para una tranquilidad corporativa total."
+        },
+        "support": {
+            "title": "Soporte Prioritario 24/7",
+            "desc": "Administrador de instalaciones dedicado con despacho de emergencia rápido."
+        },
+        "eco": {
+            "title": "100% Eco-Certificado",
+            "desc": "Compuestos certificados ecológicos seguros para empleados y el planeta."
+        },
+        "standards": {
+            "title": "Conforme con OSHA e ISO",
+            "desc": "Estricta conformidad con las regulaciones canadienses de higiene y seguridad."
+        }
+    },
+    "HowItWorks": {
+        "subtitle": "Simple y transparente",
+        "title_part1": "Cómo",
+        "title_part2": "trabajamos contigo",
+        "description": "Desde tu primera consulta hasta el servicio continuo — un proceso claro, sin presión ni sorpresas.",
+        "cta": "Obtener cotización gratis"
+    },
+    "ServiceChecklists": {
+        "view_details": "Ver detalles incluidos",
+        "hide_details": "Ocultar detalles",
+        "office": [
+            "Desinfección completa de superficies de alto contacto (pomos, interruptores, teclados)",
+            "Aspiración con filtro HEPA de alfombras y esterilización de tapetes",
+            "Pulido y organización de superficies de escritorios ejecutivos",
+            "Control de polvo ecológico y purificación del aire interior",
+            "Desinfección de baños y desodorización biológica"
+        ],
+        "medical": [
+            "Desinfección de grado clínico en conformidad con los estándares de salud",
+            "Prevención de contaminación cruzada usando herramientas de microfibra codificadas por colores",
+            "Extracción de polvo peligroso y protocolos de sala limpia",
+            "Esterilización de salas de espera de pacientes y salas de examen",
+            "Gestión de eliminación bio-segura de residuos y documentación de cumplimiento"
+        ],
+        "retail": [
+            "Pulido y limpieza detallada de vidrios de entrada de alto tráfico",
+            "Lustrado de pisos de mármol/madera dura y encerado de alto brillo",
+            "Eliminación de polvo en vitrinas y borrado de huellas dactilares",
+            "Desinfección de probadores y acondicionamiento de espejos",
+            "Tratamiento de manchas en textiles, alfombras y áreas de asientos"
+        ],
+        "industrial": [
+            "Aspiración intensiva de polvo pesado y residuos de paneles de yeso",
+            "Raspado de contrapisos y preparación de sellador de concreto",
+            "Extracción de grasas industriales, salpicaduras de pintura y adhesivos",
+            "Aspiración de conductos, tuberías de gran altura y luminarias",
+            "Acabado minucioso listo para inspección y entrega al inquilino"
+        ]
+    },
     "Footer": {
         "description": "La elección de Canadá para la limpieza comercial ecológica. Excelencia en cada rincón, fiabilidad en cada visita.",
         "headings": {
             "services": "Servicios",
             "company": "Empresa",
-            "compliance": "Cumplimiento"
+            "compliance": "Cumplimiento",
+            "areas": "Zonas que atendemos"
         },
+        "areas_prefix": "Limpieza comercial",
+        "view_all_areas": "Ver todas las zonas",
         "links": {
             "office": "Limpieza de Oficinas",
             "medical": "Limpieza de Clínicas Médicas",
@@ -201,10 +319,94 @@
             "about": "Sobre Nosotros",
             "testimonials": "Testimonios",
             "philosophy": "Filosofía",
+            "blog": "Blog",
             "contact": "Contacto",
             "privacy": "Privacidad",
             "terms": "Términos"
         },
         "copyright": "© 2025 RBA Commercial Services Inc. Todos los derechos reservados."
+    },
+    "Meta": {
+        "home": {
+            "title": "Limpieza comercial en Montreal | RBA Commercial Services",
+            "description": "Limpieza comercial profesional en Montreal y alrededores: oficinas, clínicas médicas, comercios y postobra. Asegurados, equipos bilingües. Presupuesto gratis: 514-623-0791.",
+            "keywords": "limpieza comercial Montreal, limpieza de oficinas Montreal, servicios de aseo Montreal, limpieza de clínicas, limpieza postobra, limpieza de comercios Quebec"
+        },
+        "about": {
+            "title": "Sobre RBA | Empresa de limpieza comercial en Montreal",
+            "description": "Empresa de limpieza comercial de Montreal construida sobre la confianza, la fiabilidad y el detalle. Equipos asegurados y verificados al servicio del Gran Montreal desde 2018."
+        },
+        "services": {
+            "title": "Servicios de limpieza comercial | Oficinas, clínicas, comercios y postobra",
+            "description": "Servicios de limpieza comercial a medida en Montreal: oficinas, desinfección de clínicas, comercios y limpieza postobra. Asegurados, confiables y ecológicos."
+        },
+        "contact": {
+            "title": "Contacte a RBA Commercial Services | Presupuesto gratis",
+            "description": "Obtenga un presupuesto gratis de limpieza comercial en Montreal. Llame al 514-623-0791 o escríbanos: respuesta rápida, sin compromiso, a la medida de su instalación."
+        },
+        "areas": {
+            "title": "Zonas que atendemos | Limpieza comercial en el Gran Montreal",
+            "description": "RBA Commercial Services ofrece limpieza comercial profesional en Montreal, Laval, Longueuil, Brossard, Westmount y Saint-Laurent. Encuentre su zona y pida un presupuesto."
+        },
+        "blog": {
+            "title": "Blog de limpieza comercial | Consejos y guías | RBA",
+            "description": "Consejos prácticos de limpieza comercial, guías de compra e ideas del sector para negocios de Montreal: frecuencia de limpieza, precios y protocolos sanitarios."
+        },
+        "testimonials": {
+            "title": "Testimonios de clientes | RBA Commercial Services Montreal",
+            "description": "Vea por qué los negocios de Montreal confían en RBA para una limpieza comercial confiable y detallista. Resultados constantes, en cada visita."
+        },
+        "privacy": {
+            "title": "Política de privacidad",
+            "description": "Cómo RBA Commercial Services recopila, usa y protege su información."
+        },
+        "terms": {
+            "title": "Términos del servicio",
+            "description": "Los términos que rigen el uso del sitio web y los servicios de RBA Commercial Services."
+        }
+    },
+    "Areas": {
+        "breadcrumb_home": "Inicio",
+        "index": {
+            "eyebrow": "Zonas de servicio",
+            "breadcrumb": "Zonas que atendemos",
+            "title_part1": "Dónde",
+            "title_highlight": "trabajamos.",
+            "intro": "RBA Commercial Services ofrece limpieza comercial profesional en todo el Gran Montreal. Elija su ciudad para ver cómo mantenemos los negocios locales impecables y listos para sus clientes.",
+            "cta_title": "¿No ve su zona?",
+            "cta_desc": "Es probable que la cubramos. Llámenos:",
+            "cta_button": "Presupuesto gratis"
+        },
+        "city": {
+            "h1_prefix": "Limpieza comercial en",
+            "cta_quote": "Presupuesto gratis",
+            "intro_heading": "Su socio de limpieza de confianza en {city}",
+            "services_eyebrow": "Lo que hacemos aquí",
+            "services_heading": "Nuestros servicios en {city}",
+            "neighborhoods_heading": "Barrios que atendemos en {city}",
+            "faq_eyebrow": "Bueno saber",
+            "faq_heading": "Limpieza en {city} — preguntas frecuentes",
+            "form_eyebrow": "Comenzar",
+            "form_heading": "Solicite su presupuesto en {city}",
+            "form_desc": "Cuéntenos sobre su instalación en {city} y prepararemos una propuesta a medida, sin presión ni compromisos.",
+            "nearby_heading": "Zonas cercanas que atendemos",
+            "all_areas": "Ver todas las zonas"
+        }
+    },
+    "Blog": {
+        "breadcrumb_home": "Inicio",
+        "eyebrow": "Consejos e ideas",
+        "title": "Blog",
+        "title_part1": "Ideas de",
+        "title_highlight": "limpieza.",
+        "intro": "Guías prácticas, consejos e ideas del sector para ayudar a los negocios de Montreal a mantener sus espacios limpios, saludables y profesionales.",
+        "featured": "Destacado",
+        "min_read": "{min} min de lectura",
+        "related": "Artículos relacionados",
+        "all_posts": "Ver todos los artículos",
+        "cta_title": "¿Listo para un lugar de trabajo más limpio y saludable?",
+        "cta_button": "Presupuesto gratis",
+        "post_cta_title": "Mantengamos su espacio impecable",
+        "post_cta_desc": "Obtenga un presupuesto gratis y sin compromiso, a la medida de su instalación y horario."
     }
 }

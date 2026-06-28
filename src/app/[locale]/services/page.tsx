@@ -1,147 +1,208 @@
+'use client';
+
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from '@/navigation';
 import FadeIn from '@/components/FadeIn';
+import ContactForm from '@/components/ContactForm';
 
 export default function Services() {
     const t = useTranslations('Services');
+    const tList = useTranslations('ServiceChecklists');
+
+
+
+    const serviceCards = [
+        {
+            id: 'office',
+            num: '01',
+            title: t('items.office.title'),
+            desc: t('items.office.desc'),
+            img: '/office-service.png',
+            checklist: [tList('office.0'), tList('office.1'), tList('office.2'), tList('office.3'), tList('office.4')]
+        },
+        {
+            id: 'medical',
+            num: '02',
+            title: t('items.medical.title'),
+            desc: t('items.medical.desc'),
+            img: '/medical-clinic.png',
+            checklist: [tList('medical.0'), tList('medical.1'), tList('medical.2'), tList('medical.3'), tList('medical.4')]
+        },
+        {
+            id: 'retail',
+            num: '03',
+            title: t('items.retail.title'),
+            desc: t('items.retail.desc'),
+            img: '/retail-place.png',
+            checklist: [tList('retail.0'), tList('retail.1'), tList('retail.2'), tList('retail.3'), tList('retail.4')]
+        },
+        {
+            id: 'industrial',
+            num: '04',
+            title: t('items.industrial.title'),
+            desc: t('items.industrial.desc'),
+            img: '/post-construction.png',
+            checklist: [tList('industrial.0'), tList('industrial.1'), tList('industrial.2'), tList('industrial.3'), tList('industrial.4')]
+        }
+    ];
 
     return (
         <>
-            <Navbar /> {/* Ensure Navbar adapts or uses default */}
-            {/* 
-        Note: The design has a specific header for services:
-        <header class="fixed top-0 z-50 w-full glass-nav border-b border-slate-200/50 dark:border-white/10"> 
-        But we are reusing the Global Navbar component. 
-        If strict adherence is needed, we would pass props or separate components.
-        For now, reusing default.
-      */}
-            <section className="pt-40 pb-20 px-6 lg:px-12 max-w-[1440px] mx-auto">
-                <div className="max-w-4xl">
-                    <FadeIn delay={0.1}>
-                        <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-primary mb-6">{t('hero_title')}</span>
-                    </FadeIn>
-                    <FadeIn delay={0.2}>
-                        <h1 className="text-6xl md:text-8xl font-extrabold tracking-tighter leading-none mb-8">
-                            {t('hero_subtitle')} <br /><span className="serif-italic font-normal lowercase">{t('hero_highlight')}</span>
-                        </h1>
-                    </FadeIn>
-                    <FadeIn delay={0.4}>
-                        <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-light max-w-2xl leading-relaxed">
-                            {t('hero_desc')}
-                        </p>
-                    </FadeIn>
-                </div>
-            </section>
-            <main className="max-w-[1440px] mx-auto px-6 lg:px-12 pb-32">
-                <div className="asymmetric-grid">
-                    <div className="col-span-12 lg:col-span-8 group relative overflow-hidden bg-white service-card">
-                        <FadeIn delay={0.2} className="h-full">
-                            <div className="aspect-[16/9] overflow-hidden">
-                                <img alt="Elite Office" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" src="/office-service.png" />
-                            </div>
-                            <div className="p-8 lg:p-12 flex flex-col md:flex-row md:items-end justify-between border-b border-x border-slate-100">
-                                <div>
-                                    <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-slate-400">01</span>
-                                    <h3 className="text-4xl font-extrabold tracking-tighter mt-2">{t('items.office.title')}</h3>
-                                    <p className="text-slate-500 mt-4 max-w-sm text-sm">{t('items.office.desc')}</p>
+            <Navbar />
+
+            {/* Page wrapper — always light */}
+            <div style={{ backgroundColor: '#F8F9FA' }} className="min-h-screen pt-40 pb-24 text-slate-900">
+
+                {/* Header */}
+                <section className="pb-16 px-6 lg:px-12 max-w-[1800px] mx-auto">
+                    <div className="max-w-4xl">
+                        <FadeIn delay={0.1}>
+                            <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-primary mb-6">{t('hero_title')}</span>
+                        </FadeIn>
+                        <FadeIn delay={0.2}>
+                            <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-8 text-slate-900">
+                                {t('hero_subtitle')} <br />
+                                <span className="serif-italic font-normal lowercase text-primary">{t('hero_highlight')}</span>
+                            </h1>
+                        </FadeIn>
+                        <FadeIn delay={0.3}>
+                            <p className="text-xl md:text-2xl text-slate-500 font-light max-w-2xl leading-relaxed">
+                                {t('hero_desc')}
+                            </p>
+                        </FadeIn>
+                    </div>
+                </section>
+
+                {/* Service Cards */}
+                <main className="max-w-[1800px] mx-auto px-6 lg:px-12 pb-24">
+                    <div className="flex items-center justify-between mb-16 pb-4 border-b border-slate-200">
+                        <span className="text-xs font-bold uppercase tracking-[0.3em] text-slate-400">Tailored Commercial Scope</span>
+                        <span className="text-xs font-bold uppercase tracking-widest text-primary">01—04</span>
+                    </div>
+
+                    <div className="grid grid-cols-1 gap-10">
+                        {serviceCards.map((service, index) => (
+                            <FadeIn key={service.id} delay={0.15 * index}>
+                                <div className="group rounded-3xl border border-slate-200 bg-white overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
+                                    <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+
+                                        {/* Photo */}
+                                        <div className="lg:col-span-5 aspect-[16/10] lg:aspect-auto overflow-hidden relative">
+                                            <img
+                                                alt={service.title}
+                                                className="w-full h-full object-cover transition-transform duration-[3s] group-hover:scale-105"
+                                                src={service.img}
+                                            />
+                                            <div className="absolute top-6 left-6 w-12 h-12 bg-black/60 backdrop-blur rounded-full flex items-center justify-center text-white font-black text-xs">
+                                                {service.num}
+                                            </div>
+                                        </div>
+
+                                        {/* Content */}
+                                        <div className="lg:col-span-7 p-8 md:p-12 flex flex-col justify-between gap-8 bg-white">
+                                            <div>
+                                                <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Service Offering</span>
+                                                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight mt-2 text-slate-900 group-hover:text-primary transition-colors">
+                                                    {service.title}
+                                                </h3>
+                                                <p className="text-slate-500 mt-4 leading-relaxed font-light text-base max-w-2xl">
+                                                    {service.desc}
+                                                </p>
+                                            </div>
+
+                                            {/* Always-visible checklist */}
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-4 border-t border-slate-100">
+                                                {service.checklist.map((item, idx) => (
+                                                    <div key={idx} className="flex items-start gap-3">
+                                                        <div className="w-5 h-5 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                            <span className="material-symbols-outlined text-xs">check</span>
+                                                        </div>
+                                                        <span className="text-xs text-slate-500 font-light leading-snug">{item}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+
+                                            {/* CTA */}
+                                            <div className="pt-6 border-t border-slate-100">
+                                                <Link
+                                                    href={`/contact?service=${service.id}`}
+                                                    className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-slate-900 text-white text-xs font-bold uppercase tracking-widest px-8 py-4 rounded-full transition-all"
+                                                >
+                                                    Book This Package
+                                                    <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a className="mt-6 md:mt-0 flex items-center gap-2 group/link" href="#">
-                                    <span className="text-xs font-bold tracking-widest uppercase">Explore Details</span>
-                                    <span className="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
-                                </a>
-                            </div>
-                        </FadeIn>
-                    </div>
-                    <div className="col-span-12 lg:col-span-4 group relative bg-white service-card">
-                        <FadeIn delay={0.4} className="h-full">
-                            <div className="aspect-[4/5] overflow-hidden">
-                                <img alt="Medical Sanitation" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/medical-clinic.png" />
-                            </div>
-                            <div className="p-8 border-b border-x border-slate-100 h-full">
-                                <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-slate-400">02</span>
-                                <h3 className="text-3xl font-extrabold tracking-tighter mt-2 leading-none uppercase">{t('items.medical.title')}</h3>
-                                <p className="text-slate-500 mt-4 text-sm">{t('items.medical.desc')}</p>
-                            </div>
-                        </FadeIn>
-                    </div>
-                    <div className="col-span-12 lg:col-span-5 group relative bg-white lg:mt-[-4rem] service-card">
-                        <FadeIn delay={0.6} className="h-full">
-                            <div className="aspect-square overflow-hidden">
-                                <img alt="Retail Spaces" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/retail-place.png" />
-                            </div>
-                            <div className="p-8 border-b border-x border-slate-100">
-                                <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-slate-400">03</span>
-                                <h3 className="text-3xl font-extrabold tracking-tighter mt-2 uppercase">{t('items.retail.title')}</h3>
-                                <p className="text-slate-500 mt-4 text-sm">{t('items.retail.desc')}</p>
-                            </div>
-                        </FadeIn>
-                    </div>
-                    <div className="col-span-12 lg:col-span-7 group relative bg-white service-card">
-                        <FadeIn delay={0.8} className="h-full">
-                            <div className="aspect-[21/9] overflow-hidden">
-                                <img alt="Post Construction" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/post-construction.png" />
-                            </div>
-                            <div className="p-8 border-b border-x border-slate-100 flex flex-col justify-center">
-                                <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-slate-400">04</span>
-                                <h3 className="text-4xl font-extrabold tracking-tighter mt-2 uppercase">{t('items.industrial.title')}</h3>
-                                <p className="text-slate-500 mt-4 text-sm max-w-md">{t('items.industrial.desc')}</p>
-                            </div>
-                        </FadeIn>
-                    </div>
-                </div>
-            </main>
-            <section className="hidden bg-white dark:bg-elite-black py-32 border-y border-slate-100 dark:border-white/5">
-                <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
-                        <div className="flex flex-col border-l border-slate-200 dark:border-white/10 pl-8">
-                            <FadeIn delay={0.2}>
-                                <div className="text-[120px] font-extrabold tracking-tighter leading-none text-primary mb-4">100</div>
-                                <div className="text-[10px] font-bold tracking-[0.4em] uppercase text-slate-400">Percent Certified Green</div>
-                                <p className="text-sm mt-4 text-slate-500 dark:text-slate-400">Eco-conscious methodologies integrated into every cleaning protocol.</p>
                             </FadeIn>
-                        </div>
-                        <div className="flex flex-col border-l border-slate-200 dark:border-white/10 pl-8">
-                            <FadeIn delay={0.4}>
-                                <div className="text-[120px] font-extrabold tracking-tighter leading-none text-slate-900 dark:text-white mb-4">0<span className="text-primary italic font-serif-italic">.</span>2</div>
-                                <div className="text-[10px] font-bold tracking-[0.4em] uppercase text-slate-400">Avg. Response Hour</div>
-                                <p className="text-sm mt-4 text-slate-500 dark:text-slate-400">Industry-leading agility in client communication and rapid deployment.</p>
-                            </FadeIn>
-                        </div>
-                        <div className="flex flex-col border-l border-slate-200 dark:border-white/10 pl-8">
-                            <FadeIn delay={0.6}>
-                                <div className="text-[120px] font-extrabold tracking-tighter leading-none text-slate-900 dark:text-white mb-4">24</div>
-                                <div className="text-[10px] font-bold tracking-[0.4em] uppercase text-slate-400">Seven Client Support</div>
-                                <p className="text-sm mt-4 text-slate-500 dark:text-slate-400">Constant vigilance to ensure your workspace remains flawless at all times.</p>
-                            </FadeIn>
-                        </div>
+                        ))}
                     </div>
-                </div>
-            </section>
-            <section className="bg-white dark:bg-background-dark py-40">
-                <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
-                    <FadeIn direction="up">
-                        <div className="bg-elite-black text-white p-12 lg:p-24 relative overflow-hidden flex flex-col items-center text-center">
-                            <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 translate-x-1/2"></div>
-                            <div className="relative z-10 max-w-3xl">
-                                <h2 className="text-5xl md:text-7xl font-extrabold tracking-tighter leading-none mb-10">
-                                    {t('cta_title')}
+                </main>
+
+                {/* Inline Contact Form */}
+                <section className="py-24 bg-white border-t border-b border-slate-200">
+                    <div className="max-w-[1200px] mx-auto px-6">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+
+                            <div className="lg:col-span-5 space-y-6">
+                                <span className="text-xs font-bold uppercase tracking-widest text-accent-gold bg-accent-gold/10 px-3 py-1 rounded-full">Get Started Today</span>
+                                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                                    Request Your Custom Quote
                                 </h2>
-                                <p className="text-lg text-slate-400 mb-12 font-light tracking-wide">
-                                    Elevate your business environment with Canada&apos;s premier commercial cleaning partner.
+                                <p className="text-slate-500 font-light leading-relaxed">
+                                    Tell us about your facility and we&apos;ll put together a tailored service proposal — no pressure, no obligations.
                                 </p>
-                                <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                                    <Link href="/contact" className="bg-primary hover:bg-white hover:text-black text-white px-12 py-5 text-xs font-bold tracking-[0.2em] uppercase transition-all">
-                                        {t('cta_button')}
-                                    </Link>
+                                <div className="space-y-4">
+                                    {[
+                                        { icon: 'timer', text: 'Response within 15 minutes during business hours' },
+                                        { icon: 'verified_user', text: '$2M liability coverage, fully bonded & insured' },
+                                        { icon: 'star', text: 'Serving Montreal\'s top corporate addresses since 2018' }
+                                    ].map(({ icon, text }) => (
+                                        <div key={icon} className="flex items-start gap-4">
+                                            <div className="w-9 h-9 bg-primary/10 text-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                                <span className="material-symbols-outlined text-base">{icon}</span>
+                                            </div>
+                                            <p className="text-sm text-slate-600 font-light leading-relaxed">{text}</p>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
+
+                            <div className="lg:col-span-7">
+                                <ContactForm />
+                            </div>
+
                         </div>
-                    </FadeIn>
-                </div>
-            </section>
+                    </div>
+                </section>
+
+                {/* CTA Banner */}
+                <section className="bg-primary text-white py-28 px-6 md:px-12 relative overflow-hidden mt-16 mx-6 lg:mx-12 rounded-3xl">
+                    <div className="max-w-[1800px] mx-auto relative z-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-12">
+                        <div>
+                            <h2 className="serif-display text-5xl md:text-7xl italic font-light mb-6">
+                                Ready for <span className="text-white/40">the elite?</span>
+                            </h2>
+                            <p className="text-xl md:text-2xl font-light opacity-80 max-w-xl">
+                                Join the roster of Canada&apos;s most prestigious corporate environments.
+                            </p>
+                        </div>
+                        <Link
+                            href="/contact"
+                            className="bg-white text-primary px-12 py-6 rounded-full text-xs font-bold uppercase tracking-widest hover:scale-105 hover:bg-accent-gold hover:text-white transition-all shadow-2xl block text-center whitespace-nowrap"
+                        >
+                            {t('cta_button')}
+                        </Link>
+                    </div>
+                    <div className="absolute top-0 right-0 w-[50%] h-full bg-white/5 -skew-x-12 translate-x-1/2 pointer-events-none"></div>
+                </section>
+
+            </div>
+
             <Footer />
         </>
     );

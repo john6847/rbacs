@@ -1,19 +1,31 @@
 'use client';
+
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FadeIn from '@/components/FadeIn';
-import Script from 'next/script';
+import ContactForm from '@/components/ContactForm';
 
 export default function Contact() {
     const t = useTranslations('Contact');
+    const tGuar = useTranslations('Guarantees');
+
+    const guaranteesList = [
+        { key: 'insured', icon: 'verified_user' },
+        { key: 'support', icon: 'support_agent' },
+        { key: 'eco', icon: 'energy_savings_leaf' },
+        { key: 'standards', icon: 'gpp_good' }
+    ];
 
     return (
         <>
             <Navbar />
-            <div className="min-h-screen pt-40 md:pt-48 bg-white text-slate-900 pb-32">
+            {/* Always light — no dark: variants */}
+            <div style={{ backgroundColor: '#F8F9FA' }} className="min-h-screen pt-40 md:pt-48 text-slate-900 pb-32">
                 <div className="max-w-[1800px] mx-auto px-6 lg:px-12">
+
+                    {/* Page Intro Header */}
                     <FadeIn delay={0.1}>
                         <div className="inline-flex items-center gap-4 mb-8">
                             <div className="w-12 h-px bg-primary"></div>
@@ -21,86 +33,115 @@ export default function Contact() {
                         </div>
                     </FadeIn>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+
+                        {/* Left Column: Interactive Form */}
                         <div className="lg:col-span-7">
                             <FadeIn delay={0.2}>
-                                <h1 className="text-6xl md:text-8xl font-extrabold leading-[0.9] text-[#0d121b] dark:text-white mb-10 max-w-4xl">
-                                    {t('hero_title')} <br /><span className="serif-italic font-normal lowercase">{t('hero_highlight')}</span>
+                                <h1 className="text-6xl md:text-8xl font-black leading-[0.9] text-slate-900 mb-6 tracking-tighter">
+                                    {t('hero_title')} <br />
+                                    <span className="serif-italic font-normal lowercase text-primary">{t('hero_highlight')}</span>
                                 </h1>
+                                <p className="text-lg text-slate-500 font-light max-w-xl mb-12">
+                                    {t('subtitle')}
+                                </p>
                             </FadeIn>
-                            
-                            <FadeIn delay={0.4}>
-                                <div className="w-full min-h-[632px]">
-                                    <iframe
-                                        src="https://api.vakaks.com/widget/form/qPdmJPKqxsM8YSxTSIKl"
-                                        style={{ width: '100%', height: '632px', border: 'none', borderRadius: '8px' }}
-                                        id="inline-qPdmJPKqxsM8YSxTSIKl" 
-                                        data-layout="{'id':'INLINE'}"
-                                        data-trigger-type="alwaysShow"
-                                        data-trigger-value=""
-                                        data-activation-type="alwaysActivated"
-                                        data-activation-value=""
-                                        data-deactivation-type="neverDeactivate"
-                                        data-deactivation-value=""
-                                        data-form-name="Form 0"
-                                        data-height="632"
-                                        data-layout-iframe-id="inline-qPdmJPKqxsM8YSxTSIKl"
-                                        data-form-id="qPdmJPKqxsM8YSxTSIKl"
-                                        title="Form 0"
-                                    />
-                                    <Script src="https://api.vakaks.com/js/form_embed.js" strategy="afterInteractive" />
-                                </div>
+
+                            <FadeIn delay={0.3}>
+                                <ContactForm />
                             </FadeIn>
                         </div>
-                        <div className="lg:col-span-5 flex flex-col gap-12 lg:sticky lg:top-40">
-                            <FadeIn direction="left" delay={0.6}>
-                                <div className="space-y-6 text-white">
-                                    <div className="flex items-center justify-between">
-                                        <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Service Area</h3>
-                                        <span className="h-px bg-slate-100 dark:bg-white/10 flex-grow ml-4"></span>
-                                    </div>
 
-                                    <div className="aspect-[4/5] bg-slate-100 dark:bg-white/5 relative group overflow-hidden">
-                                        <div className="absolute inset-0 bg-slate-900/10 dark:bg-black/50 transition-opacity group-hover:opacity-0 z-0"></div>
-                                        {/* Placeholder Map Image - Replace with real map or interactive component */}
-                                        <div className="absolute inset-0 grayscale contrast-125 opacity-40 mix-blend-multiply dark:mix-blend-overlay">
-                                            <div className="w-full h-full bg-[url('/contact.png')] bg-cover bg-center"></div>
+                        {/* Right Column: Credibility Sidebar */}
+                        <div className="lg:col-span-5 flex flex-col gap-10 lg:sticky lg:top-40">
+
+                            {/* Service Region Card */}
+                            <FadeIn direction="left" delay={0.4}>
+                                <div className="space-y-4">
+                                    <div className="flex items-center gap-4">
+                                        <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 whitespace-nowrap">Service Coverage</h3>
+                                        <span className="h-px bg-slate-200 flex-grow"></span>
+                                    </div>
+                                    <div className="rounded-3xl border border-slate-200 shadow-md bg-white p-8 flex items-center justify-between gap-6">
+                                        <div className="space-y-4">
+                                            <div className="flex items-center gap-3 text-primary">
+                                                <span className="material-symbols-outlined font-light text-3xl">map</span>
+                                                <span className="text-xs font-bold uppercase tracking-widest text-slate-400">Headquarters & Region</span>
+                                            </div>
+                                            <div>
+                                                <h4 className="text-2xl font-black tracking-tight text-slate-900">Greater Montreal Area</h4>
+                                                <p className="text-xs text-slate-500 mt-1 uppercase tracking-wider">Quebec, Canada</p>
+                                            </div>
+                                            <div className="text-xs text-slate-400 font-light space-y-1">
+                                                <p className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                                    Montreal Downtown & Executive Hubs
+                                                </p>
+                                                <p className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                                    Laval, Longueuil, & surrounding suburbs
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div className="absolute inset-0 bg-primary/5 pointer-events-none"></div>
-                                        <div className="absolute bottom-8 left-8 right-8 bg-white/95 dark:bg-black/90 backdrop-blur p-6 border border-slate-200 dark:border-white/10">
-                                            <p className="text-xs font-bold tracking-widest uppercase mb-4 ">Service Region</p>
-                                            <div className="flex flex-col gap-1">
-                                                <div className="text-[11px] font-medium text-slate-600 dark:text-slate-400 uppercase tracking-tighter">Greater Montreal</div>
-                                                <div className="text-[11px] font-medium text-slate-400 dark:text-slate-500 uppercase tracking-tighter">Quebec, Canada</div>
+
+                                        {/* Animated ping dot */}
+                                        <div className="hidden sm:block w-28 h-28 rounded-full border border-slate-200 relative overflow-hidden bg-slate-50 flex-shrink-0">
+                                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 border border-primary/20 rounded-full animate-ping"></div>
+                                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full shadow-lg shadow-primary/40 flex items-center justify-center">
+                                                <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </FadeIn>
-                            <div className="hidden grid grid-cols-2 gap-px bg-slate-100 dark:bg-white/5 border border-slate-100 dark:border-white/5">
-                                <div className="bg-white dark:bg-background-dark p-8">
-                                    <span className="material-symbols-outlined text-primary text-3xl mb-4">verified_user</span>
-                                    <h4 className="text-sm font-bold uppercase tracking-widest mb-2">Bonded</h4>
-                                    <p className="text-xs text-slate-500 leading-relaxed">Fully insured and bonded for maximum corporate security.</p>
+
+                            {/* Guarantees */}
+                            <FadeIn direction="left" delay={0.5}>
+                                <div className="space-y-4">
+                                    <div className="flex items-center gap-4">
+                                        <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 whitespace-nowrap">{tGuar('title')}</h3>
+                                        <span className="h-px bg-slate-200 flex-grow"></span>
+                                    </div>
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        {guaranteesList.map((g) => (
+                                            <div
+                                                key={g.key}
+                                                className="p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-md transition-all duration-300 group"
+                                            >
+                                                <span className="material-symbols-outlined text-primary text-3xl font-light mb-3 block group-hover:scale-110 transition-transform duration-300">
+                                                    {g.icon}
+                                                </span>
+                                                <h4 className="text-sm font-extrabold text-slate-900 tracking-tight uppercase mb-1">
+                                                    {tGuar(`${g.key}.title`)}
+                                                </h4>
+                                                <p className="text-xs text-slate-500 leading-relaxed font-light">
+                                                    {tGuar(`${g.key}.desc`)}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                                <div className="bg-white dark:bg-background-dark p-8">
-                                    <span className="material-symbols-outlined text-primary text-3xl mb-4">gpp_good</span>
-                                    <h4 className="text-sm font-bold uppercase tracking-widest mb-2">Certified</h4>
-                                    <p className="text-xs text-slate-500 leading-relaxed">ISO 9001 and OSHA compliant sanitation protocols.</p>
-                                </div>
-                            </div>
-                            <div className="hidden p-8 border border-primary/20 bg-primary/5 relative group overflow-hidden">
-                                <div className="relative z-10">
-                                    <h4 className="text-sm font-bold uppercase tracking-[0.2em] mb-4">Immediate Assistance</h4>
-                                    <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
-                                        For urgent inquiries or emergency sanitation services, our dispatch team is available 24/7.
+                            </FadeIn>
+
+                            {/* 24/7 Call Card */}
+                            <FadeIn direction="left" delay={0.6}>
+                                <div className="p-8 bg-slate-900 rounded-3xl text-white relative overflow-hidden group">
+                                    <div className="absolute top-0 right-0 w-24 h-full bg-primary/10 -skew-x-12 translate-x-12 group-hover:bg-primary/20 transition-colors pointer-events-none"></div>
+                                    <h4 className="text-xs font-bold uppercase tracking-[0.3em] text-slate-400 mb-2">Immediate Dispatch</h4>
+                                    <p className="text-slate-400 text-xs font-light leading-relaxed mb-6">
+                                        Need an emergency cleanup or high-security workspace? Call our 24/7 facilities coordinator directly.
                                     </p>
-                                    <a href="tel:+15145550123" className="text-2xl font-extrabold tracking-tighter text-primary hover:text-primary/80 transition-colors">
-                                        (514) 555-0123
+                                    <a
+                                        href={`tel:${t('info.phone.value')}`}
+                                        className="inline-flex items-center gap-3 text-2xl font-black tracking-tight text-white hover:text-accent-gold transition-colors"
+                                    >
+                                        <span className="material-symbols-outlined font-light text-2xl text-accent-gold animate-bounce">phone_in_talk</span>
+                                        {t('info.phone.value')}
                                     </a>
                                 </div>
-                            </div>
+                            </FadeIn>
                         </div>
+
                     </div>
                 </div>
             </div>

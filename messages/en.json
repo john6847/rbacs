@@ -50,22 +50,48 @@
         "experience": "About",
         "philosophy": "Philosophy",
         "testimonials": "Testimonials",
+        "areas": "Areas",
+        "blog": "Blog",
         "contact": "Contact",
         "inquire": "Inquire"
     },
     "About": {
-        "hero_title": "OUR LEGACY",
-        "hero_subtitle": "Built on Trust.",
-        "hero_desc": "RBA Commercial Services is a professional commercial cleaning company serving businesses across Canada. We specialize in delivering reliable, consistent, and high-quality cleaning solutions.",
-        "legacy_title": "OUR LEGACY",
-        "legacy_desc1": "Founded with a vision to redefine commercial cleaning, RBA Commercial Services has grown from a local service provider into a trusted partner for businesses across Canada. Our journey is built on a simple promise: to deliver immaculate results with uncompromising reliability.",
-        "legacy_desc2": "Over the years, we have refined our methods, invested in state-of-the-art green cleaning technologies, and built a team of highly trained professionals who share our commitment to excellence.",
-        "mission_title": "OUR MISSION",
-        "mission_headline": "ELEVATING",
-        "mission_highlight": "Standards.",
-        "mission_desc": "To provide dependable commercial cleaning services that help businesses operate in clean, safe, and professional environments — without stress or disruption.",
-        "mission_quote": "We don't just clean workspaces; we curate environments that promote health, inspire productivity, and protect your brand's reputation.",
-        "values_title": "CORE VALUES",
+        "hero_title": "About RBA",
+        "hero_subtitle": "Built on",
+        "hero_highlight": "trust.",
+        "hero_desc": "RBA Commercial Services is a Montreal-based commercial cleaning company committed to reliable, high-quality service for offices, clinics, retail spaces, and commercial properties across Canada.",
+        "story_label": "Our Story",
+        "story_title_part1": "A fresh approach to",
+        "story_title_part2": "commercial cleaning.",
+        "story_desc1": "We started RBA with a clear goal: bring dependable, detail-oriented cleaning to businesses that deserve better than inconsistent service and vague promises.",
+        "story_desc2": "Every facility is different. We take time to understand your space, your schedule, and your standards — then build a plan that actually fits.",
+        "mission_label": "Our Mission",
+        "mission_headline": "Clean spaces,",
+        "mission_highlight": "zero stress.",
+        "mission_desc": "To provide dependable commercial cleaning that helps businesses operate in clean, safe, and professional environments — without disruption or guesswork.",
+        "mission_quote": "We don't just clean workspaces — we help you put your best foot forward, every single visit.",
+        "commitments_label": "What You Can Expect",
+        "commitments_title": "Our Commitments",
+        "commitments": {
+            "reliable": {
+                "title": "Reliable Scheduling",
+                "desc": "Consistent visit times and clear communication — no surprises."
+            },
+            "insured": {
+                "title": "Fully Insured",
+                "desc": "Liability coverage and professional operations you can trust."
+            },
+            "eco": {
+                "title": "Eco-Conscious Options",
+                "desc": "Green cleaning products available for a healthier workplace."
+            },
+            "quality": {
+                "title": "Quality-Focused",
+                "desc": "Detailed checklists and thorough work — not rushed shortcuts."
+            }
+        },
+        "values_title": "Core Values",
+        "values_heading": "What guides us",
         "values": {
             "integrity": {
                 "title": "Reliability",
@@ -80,10 +106,10 @@
                 "desc": "Trained staff, insured operations, respectful service."
             }
         },
-        "team_title": "OUR EXPERTS",
-        "team_desc": "Meet the dedicated professionals ensuring your facility shines.",
-        "cta_title": "Join Our Legacy",
-        "cta_button": "Work With Us"
+        "cta_title_part1": "Ready to work",
+        "cta_title_part2": "with us?",
+        "cta_desc": "Get a free quote tailored to your facility. No pressure, no obligations.",
+        "cta_button": "Get a Free Quote"
     },
     "Services": {
         "hero_title": "OUR EXPERTISE",
@@ -186,13 +212,105 @@
             }
         }
     },
+    "BeforeAfter": {
+        "title": "Interactive Demonstration",
+        "subtitle": "Swipe to witness our standard",
+        "description": "Drag the slider to see the difference between a messy workspace and an Elite RBA restored environment.",
+        "before_label": "Untreated Area",
+        "after_label": "RBA Elite Standard"
+    },
+    "Calculator": {
+        "title": "Instant Estimate Calculator",
+        "subtitle": "Plan Your Maintenance Budget",
+        "facility_type": "Facility Type",
+        "select_category": "Select Category",
+        "scale": "Estimated Size (SQ FT)",
+        "frequency": "Frequency of Service",
+        "daily": "Daily Maintenance",
+        "weekly": "Weekly Protocol",
+        "biweekly": "Bi-Weekly Care",
+        "one_time": "One-Time Intensive",
+        "calculate_btn": "Calculate Rate",
+        "estimate_title": "Estimated Cost",
+        "rate_range": "Est. ${min} - ${max} / month",
+        "one_time_range": "Est. ${min} - ${max} one-time",
+        "disclaimer": "*Prices are rough estimates based on size and standard labor. A site audit is required to finalize.",
+        "cta_book": "Book and Lock In Rate",
+        "step_1": "Scope",
+        "step_2": "Details",
+        "step_3": "Contact",
+        "company": "Organization Name",
+        "phone": "Phone Number",
+        "date": "Target Commencement Date"
+    },
+    "Guarantees": {
+        "title": "Our Professional Commitments",
+        "insured": {
+            "title": "Fully Insured & Bonded",
+            "desc": "$2M liability coverage for complete corporate peace of mind."
+        },
+        "support": {
+            "title": "24/7 Priority Support",
+            "desc": "Dedicated facilities manager with rapid emergency dispatch."
+        },
+        "eco": {
+            "title": "100% Eco-Certified",
+            "desc": "Green-certified compounds safe for employees and the planet."
+        },
+        "standards": {
+            "title": "OSHA & ISO Compliant",
+            "desc": "Strict conformance to Canadian hygiene and safety regulations."
+        }
+    },
+    "HowItWorks": {
+        "subtitle": "Simple & Transparent",
+        "title_part1": "How We",
+        "title_part2": "Work With You",
+        "description": "From your first inquiry to ongoing service — a clear process with no pressure and no surprises.",
+        "cta": "Get Your Free Quote"
+    },
+    "ServiceChecklists": {
+        "view_details": "View What's Included",
+        "hide_details": "Hide Details",
+        "office": [
+            "Complete disinfection of high-touch surfaces (doorknobs, switches, keyboards)",
+            "HEPA-filter vacuuming of carpets and rug sterilization",
+            "Executive desk surface polishing and organization",
+            "Eco-friendly dust control and indoor air-purification sweep",
+            "Restroom sanitation and biological deodorization"
+        ],
+        "medical": [
+            "Clinical grade disinfection compliant with healthcare standards",
+            "Cross-contamination prevention using color-coded microfiber tools",
+            "Hazardous dust extraction and cleanroom protocols",
+            "Sterilization of patient waiting rooms and exam chambers",
+            "Bio-safe disposal management and compliance documentation"
+        ],
+        "retail": [
+            "High-traffic entrance glass polishing and detailing",
+            "Luxury marble/hardwood floor buffing and high-gloss waxing",
+            "Display case dust elimination and fingerprint removal",
+            "Fitting room sanitation and mirror conditioning",
+            "Spot treatment of textiles, rugs, and seating areas"
+        ],
+        "industrial": [
+            "Heavy-duty dust and drywall residue vacuuming",
+            "Subfloor scraping and concrete sealer preparation",
+            "Industrial grease, paint splatters, and adhesive extraction",
+            "High-ceiling pipe, duct, and light fixture vacuuming",
+            "Final white-glove inspect-ready detail for tenant handoff"
+        ]
+    },
     "Footer": {
         "description": "Canada's choice for professional commercial cleaning. Excellence in every corner, reliability in every visit.",
         "headings": {
             "services": "Services",
             "company": "Company",
-            "compliance": "Compliance"
+            "compliance": "Compliance",
+            "areas": "Areas We Serve"
         },
+        "areas_prefix": "Commercial Cleaning",
+        "view_all_areas": "View all areas",
         "links": {
             "office": "Office Cleaning",
             "medical": "Medical Clinic Cleaning",
@@ -201,10 +319,94 @@
             "about": "About Us",
             "testimonials": "Testimonials",
             "philosophy": "Services",
+            "blog": "Blog",
             "contact": "Contact",
             "privacy": "Privacy",
             "terms": "Terms"
         },
         "copyright": "© 2026 RBA Commercial Services. All rights reserved."
+    },
+    "Meta": {
+        "home": {
+            "title": "Commercial Cleaning in Montreal | RBA Commercial Services",
+            "description": "Professional commercial cleaning in Montreal & surrounding areas — offices, medical clinics, retail & post-construction. Fully insured, bilingual crews. Free quotes: +1 514-623-0791.",
+            "keywords": "commercial cleaning Montreal, office cleaning Montreal, janitorial services Montreal, medical clinic cleaning, post-construction cleaning, retail cleaning Quebec, commercial cleaning company"
+        },
+        "about": {
+            "title": "About RBA | Montreal Commercial Cleaning Company",
+            "description": "Montreal-based commercial cleaning company built on trust, reliability, and detail. Fully insured, background-checked crews serving businesses across Greater Montreal since 2018."
+        },
+        "services": {
+            "title": "Commercial Cleaning Services | Office, Medical, Retail & Post-Construction",
+            "description": "Tailored commercial cleaning services in Montreal: office cleaning, medical clinic disinfection, retail cleaning, and post-construction cleanup. Insured, reliable, eco-conscious."
+        },
+        "contact": {
+            "title": "Contact RBA Commercial Services | Free Cleaning Quote",
+            "description": "Get a free commercial cleaning quote in Montreal. Call +1 514-623-0791 or message us — fast response, no obligation, tailored to your facility."
+        },
+        "areas": {
+            "title": "Areas We Serve | Commercial Cleaning Across Greater Montreal",
+            "description": "RBA Commercial Services provides professional commercial cleaning across Montreal, Laval, Longueuil, Brossard, Westmount and Saint-Laurent. Find your area and get a free quote."
+        },
+        "blog": {
+            "title": "Commercial Cleaning Blog | Tips & Guides | RBA",
+            "description": "Practical commercial cleaning tips, buying guides and industry insights for Montreal businesses — from office cleaning frequency to pricing and healthcare protocols."
+        },
+        "testimonials": {
+            "title": "Client Testimonials | RBA Commercial Services Montreal",
+            "description": "See why Montreal businesses trust RBA Commercial Services for reliable, detail-focused commercial cleaning. Real results, consistent service, every visit."
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "description": "How RBA Commercial Services collects, uses, and protects your information."
+        },
+        "terms": {
+            "title": "Terms of Service",
+            "description": "The terms governing the use of the RBA Commercial Services website and services."
+        }
+    },
+    "Areas": {
+        "breadcrumb_home": "Home",
+        "index": {
+            "eyebrow": "Service Areas",
+            "breadcrumb": "Areas We Serve",
+            "title_part1": "Where we",
+            "title_highlight": "work.",
+            "intro": "RBA Commercial Services delivers professional commercial cleaning across Greater Montreal. Choose your city to see how we keep local businesses spotless, healthy, and ready for clients.",
+            "cta_title": "Don't see your area?",
+            "cta_desc": "We likely cover it. Give us a call:",
+            "cta_button": "Get a Free Quote"
+        },
+        "city": {
+            "h1_prefix": "Commercial Cleaning in",
+            "cta_quote": "Get a Free Quote",
+            "intro_heading": "Your trusted cleaning partner in {city}",
+            "services_eyebrow": "What we do here",
+            "services_heading": "Our services in {city}",
+            "neighborhoods_heading": "Neighbourhoods we serve in {city}",
+            "faq_eyebrow": "Good to know",
+            "faq_heading": "{city} cleaning — frequently asked questions",
+            "form_eyebrow": "Get Started",
+            "form_heading": "Request your {city} cleaning quote",
+            "form_desc": "Tell us about your {city} facility and we'll build a tailored proposal — no pressure, no obligations.",
+            "nearby_heading": "Nearby areas we serve",
+            "all_areas": "View all service areas"
+        }
+    },
+    "Blog": {
+        "breadcrumb_home": "Home",
+        "eyebrow": "Insights & Tips",
+        "title": "Blog",
+        "title_part1": "Cleaning",
+        "title_highlight": "insights.",
+        "intro": "Practical guides, tips, and industry insights to help Montreal businesses keep their spaces clean, healthy, and professional.",
+        "featured": "Featured",
+        "min_read": "{min} min read",
+        "related": "Related articles",
+        "all_posts": "View all articles",
+        "cta_title": "Ready for a cleaner, healthier workplace?",
+        "cta_button": "Get a Free Quote",
+        "post_cta_title": "Let's keep your space spotless",
+        "post_cta_desc": "Get a free, no-obligation quote tailored to your facility and schedule."
     }
 }

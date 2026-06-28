@@ -60,6 +60,8 @@ export default function Navbar() {
                     
                     <Link href="/about" className="text-[11px] font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity">{t('experience')}</Link>
                     <Link href="/services" className="text-[11px] font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity">{t('services')}</Link>
+                    <Link href="/areas" className="text-[11px] font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity">{t('areas')}</Link>
+                    <Link href="/blog" className="text-[11px] font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity">{t('blog')}</Link>
                     {/* <Link href="/testimonials" className="text-[11px] font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity">{t('testimonials')}</Link> */}
                     <Link href="/contact" className="text-[11px] font-bold uppercase tracking-[0.2em] hover:opacity-60 transition-opacity">{t('contact')}</Link>
                 </nav>
