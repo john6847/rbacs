@@ -214,7 +214,7 @@ export default function Home() {
                                 </div>
                                 <div>
                                     <span className="block text-[10px] text-white/40 uppercase tracking-widest mb-2">{tNextSteps('email')}</span>
-                                    <span className="text-white text-lg font-bold break-all">contact@rbacommercialservices.com</span>
+                                    <span className="text-white text-lg font-bold break-all">contact@rbacommercialservices.ca</span>
                                 </div>
                             </div>
                         </FadeIn>

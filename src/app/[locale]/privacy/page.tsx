@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
                     title: "7. Contact Us",
                     text: "If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:",
                     details: {
-                        email: "Email: contact@rbacommercialservices.com",
+                        email: "Email: contact@rbacommercialservices.ca",
                         phone: "Phone: +1 514-623-0791",
                         address: "Address: 8360 rue birnam, Montreal, QC, Canada"
                     }
@@ -83,7 +83,7 @@ export default function PrivacyPolicy() {
                     title: "7. Contactez-nous",
                     text: "Pour toute question ou préoccupation concernant cette politique de confidentialité ou nos pratiques de protection des données, veuillez nous contacter à :",
                     details: {
-                        email: "Courriel : contact@rbacommercialservices.com",
+                        email: "Courriel : contact@rbacommercialservices.ca",
                         phone: "Téléphone : +1 514-623-0791",
                         address: "Adresse : 8360 rue birnam, Montreal, QC, Canada"
                     }
@@ -123,7 +123,7 @@ export default function PrivacyPolicy() {
                     title: "7. Contáctenos",
                     text: "Si tiene alguna pregunta o inquietud sobre esta Política de Privacidad, contáctenos en:",
                     details: {
-                        email: "Correo electrónico: contact@rbacommercialservices.com",
+                        email: "Correo electrónico: contact@rbacommercialservices.ca",
                         phone: "Teléfono: +1 514-623-0791",
                         address: "Dirección: 8360 rue birnam, Montreal, QC, Canada"
                     }

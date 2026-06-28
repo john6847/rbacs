@@ -3,7 +3,7 @@
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ||
-  'https://rbacommercialservices.com';
+  'https://rbacommercialservices.ca';
 
 export const locales = ['en', 'fr', 'es'] as const;
 export type Locale = (typeof locales)[number];
@@ -23,7 +23,7 @@ export const business = {
   // Use an absolute URL so it resolves in JSON-LD regardless of page.
   logo: `${SITE_URL}/logo-rba.png`,
   image: `${SITE_URL}/office.jpg`,
-  email: 'contact@rbacommercialservices.com',
+  email: 'contact@rbacommercialservices.ca',
   phone: '+1-514-623-0791',
   priceRange: '$$',
   foundingYear: '2018',
@@ -48,9 +48,10 @@ export const business = {
 } as const;
 
 // Default share image used for Open Graph / Twitter when a page sets none.
+// Branded 1200x630 card (logo + tagline) — the standard social-share size.
 export const defaultOgImage = {
-  url: `${SITE_URL}/office.jpg`,
+  url: `${SITE_URL}/og-image.png`,
   width: 1200,
   height: 630,
-  alt: 'RBA Commercial Services — professional commercial cleaning in Montreal',
+  alt: 'RBA Commercial Services — professional commercial cleaning in Greater Montreal',
 };

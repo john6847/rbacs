@@ -47,7 +47,7 @@ export default function TermsOfService() {
                     title: "8. Contact Information",
                     text: "For questions or comments regarding these Terms of Service, please contact us at:",
                     details: {
-                        email: "Email: contact@rbacommercialservices.com",
+                        email: "Email: contact@rbacommercialservices.ca",
                         phone: "Phone: +1 514-623-0791",
                         address: "Address: 8360 rue birnam, Montreal, QC, Canada"
                     }
@@ -91,7 +91,7 @@ export default function TermsOfService() {
                     title: "8. Informations de contact",
                     text: "Pour toute question ou commentaire concernant ces conditions d'utilisation, veuillez nous contacter à :",
                     details: {
-                        email: "Courriel : contact@rbacommercialservices.com",
+                        email: "Courriel : contact@rbacommercialservices.ca",
                         phone: "Téléphone : +1 514-623-0791",
                         address: "Adresse : 8360 rue birnam, Montreal, QC, Canada"
                     }
@@ -135,7 +135,7 @@ export default function TermsOfService() {
                     title: "8. Información de contacto",
                     text: "Para preguntas o comentarios sobre estos Términos de Servicio, contáctenos en:",
                     details: {
-                        email: "Correo electrónico: contact@rbacommercialservices.com",
+                        email: "Correo electrónico: contact@rbacommercialservices.ca",
                         phone: "Teléfono: +1 514-623-0791",
                         address: "Dirección: 8360 rue birnam, Montreal, QC, Canada"
                     }
