@@ -552,7 +552,7 @@ export const posts: BlogPost[] = [
           {
             heading: 'Pourquoi les cliniques sont différentes',
             paragraphs: [
-              'Salles d’attente, tables d’examen et équipement partagé voient un flux constant de personnes, parfois malades. Sans désinfection rigoureuse, ces surfaces deviennent des points de transmission. L’objectif n’est pas seulement propre à l’œil, mais sécuritaire sur le plan hygiénique.',
+              'Salles d’attente, tables d’examen et équipement partagé voient un flux constant de personnes, parfois malades. Sans désinfection rigoureuse, ces surfaces deviennent des points de transmission. L’objectif n’est pas seulement une propreté visible, mais une réelle sécurité sanitaire.',
             ],
           },
           {

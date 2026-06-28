@@ -4,7 +4,7 @@
         "title_part1": "FIABILITÉ",
         "title_part2": "Constante.",
         "description": "RBA Commercial Services offre des solutions de nettoyage fiables et de haute qualité pour les bureaux, cliniques, commerces et propriétés commerciales partout au Canada.",
-        "cta": "Obtenir un devis gratuit"
+        "cta": "Obtenir une soumission gratuite"
     },
     "WhyUs": {
         "subtitle": "Reconnu par les leaders de l'industrie",
@@ -27,7 +27,7 @@
         "subtitle": "Prochaines étapes",
         "headline": "PRÊT pour un",
         "headline_highlight": "Nouveau",
-        "headline_end": "DÉPART?",
+        "headline_end": "DÉPART ?",
         "description": "Parlez à un spécialiste aujourd'hui. Nous offrons des prix compétitifs et des horaires flexibles.",
         "call": "Appelez-nous",
         "email": "Envoyez-nous un courriel",
@@ -75,7 +75,7 @@
             },
             "insured": {
                 "title": "Entièrement assuré",
-                "desc": "Couverture responsabilité et opérations professionnelles en qui vous pouvez avoir confiance."
+                "desc": "Couverture de responsabilité et opérations professionnelles dignes de confiance."
             },
             "quality": {
                 "title": "Axé sur la qualité",
@@ -99,9 +99,9 @@
             }
         },
         "cta_title_part1": "Prêt à travailler",
-        "cta_title_part2": "avec nous?",
-        "cta_desc": "Obtenez un devis gratuit adapté à votre installation. Sans pression, sans obligation.",
-        "cta_button": "Obtenir un devis gratuit"
+        "cta_title_part2": "avec nous ?",
+        "cta_desc": "Obtenez une soumission gratuite adaptée à votre installation. Sans pression, sans obligation.",
+        "cta_button": "Obtenir une soumission gratuite"
     },
     "Services": {
         "hero_title": "NOTRE EXPERTISE",
@@ -120,8 +120,8 @@
                 "desc": "Protocoles de désinfection de qualité hospitalière pour les cliniques, cabinets dentaires et établissements de santé."
             },
             "industrial": {
-                "title": "Industriel et Entrepôt",
-                "desc": "Nettoyage robuste pour la sécurité et l'efficacité dans les espaces de fabrication et de stockage."
+                "title": "Après-construction",
+                "desc": "Élimination rapide de la poussière, des débris et des résidus après rénovation ou construction — prêt à occuper."
             },
             "retail": {
                 "title": "Commerce et Salle d'exposition",
@@ -148,7 +148,7 @@
             }
         },
         "cta_title": "Prêt pour un standard plus élevé ?",
-        "cta_button": "Obtenir un devis personnalisé"
+        "cta_button": "Obtenir une soumission personnalisée"
     },
     "Contact": {
         "hero_label": "Accès Direct",
@@ -255,7 +255,7 @@
         "title_part1": "Comment nous",
         "title_part2": "travaillons avec vous",
         "description": "De votre première demande au service continu — un processus clair, sans pression ni surprises.",
-        "cta": "Obtenir un devis gratuit"
+        "cta": "Obtenir une soumission gratuite"
     },
     "ServiceChecklists": {
         "view_details": "Voir le détail inclus",
@@ -312,7 +312,7 @@
             "privacy": "Confidentialité",
             "terms": "Conditions"
         },
-        "copyright": "© 2025 RBA Commercial Services Inc. Tous droits réservés."
+        "copyright": "© 2026 RBA Commercial Services Inc. Tous droits réservés."
     },
     "Meta": {
         "home": {
