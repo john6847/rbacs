@@ -1,26 +1,23 @@
 {
     "Hero": {
-        "subtitle": "Limpieza comercial profesional de confianza",
-        "title_part1": "CONFIABILIDAD",
-        "title_part2": "Constante.",
-        "description": "RBA Commercial Services ofrece soluciones de limpieza confiables y de alta calidad para oficinas, clínicas y comercios en todo Canadá.",
-        "cta": "Obtener cotización gratis"
+        "subtitle": "Gran Montreal",
+        "title_part1": "Una limpieza comercial que puede verificar,",
+        "title_part2": "no solo prometer.",
+        "description": "Equipos asegurados, con antecedentes verificados y conformes al decreto, para oficinas, clínicas y espacios comerciales del Gran Montreal — con una lista de verificación escrita y prueba de cada visita. El mismo equipo, siempre. Sin sorpresas, sin responsabilidad para usted.",
+        "cta": "Reserve una visita gratuita de 15 minutos"
     },
     "WhyUs": {
-        "subtitle": "Confiado por líderes de la industria",
-        "title_part1": "Por Qué",
-        "title_part2": "Elegirnos",
-        "description": "En RBA Commercial Services, creemos que un lugar de trabajo limpio refleja su profesionalismo. Nuestro equipo capacitado ofrece resultados consistentes y atención al detalle.",
-        "cta": "Saber Más",
+        "subtitle": "Nuestros compromisos",
+        "title_part1": "Lo que obtiene",
+        "title_part2": "en concreto",
+        "description": "Sin promesas vagas: solo compromisos concretos, por escrito y cumplidos en cada visita.",
+        "cta": "Ver nuestros servicios",
         "items": {
-            "support": {
-                "title": "Prioridad 24/7",
-                "desc": "Equipo de respuesta rápida disponible las 24 horas para manejar emergencias sin tiempo de inactividad."
-            },
-            "expert": {
-                "title": "Personal Experto",
-                "desc": "Verificaciones rigurosas de antecedentes y capacitación continua para requisitos de alta seguridad."
-            }
+            "crew": "El mismo equipo en cada visita — nunca un grupo rotativo de desconocidos en su espacio.",
+            "checklist": "Una lista de verificación digital escrita, firmada después de cada limpieza.",
+            "insured": "Totalmente asegurados, con nómina conforme al decreto de mantenimiento de edificios públicos de Quebec (CNESST / CPEEP) — nunca nos convertimos en su responsabilidad.",
+            "owner": "Una línea directa con el propietario, no un centro de llamadas.",
+            "reclean": "¿Se nos pasó algo? Lo volvemos a limpiar en 24 horas, gratis."
         }
     },
     "NextSteps": {
@@ -28,7 +25,7 @@
         "headline": "LISTO para un",
         "headline_highlight": "Nuevo",
         "headline_end": "COMIENZO?",
-        "description": "Hable con un especialista hoy. Ofrecemos precios competitivos y horarios flexibles.",
+        "description": "Hable con un especialista hoy. Ofrecemos precios competitivos y horarios flexibles en todo el Gran Montreal.",
         "call": "Llámenos",
         "email": "Envíenos un correo",
         "form": {
@@ -40,6 +37,23 @@
             "facility_label": "Tipo de instalación",
             "submit": "Enviar solicitud"
         }
+    },
+    "Promise": {
+        "heading": "La garantía de 30 días, sin riesgo al cambiar",
+        "body": "Pruébenos durante 30 días. Si se nos pasa algo, lo corregimos gratis. ¿No está satisfecho? Se va — sin penalización, sin contrato trampa."
+    },
+    "Founder": {
+        "eyebrow": "Nuestro fundador",
+        "heading": "Quién está detrás de RBA",
+        "body": "RBA nació porque estaba cansada de ver edificios mal atendidos por limpiadores que hacían las cosas a medias y luego desaparecían. Nosotros lo hacemos distinto: las mismas personas, el mismo estándar, en cada visita — y pongo mi nombre en ello.",
+        "signature": "— Ketya Ridore, Fundadora"
+    },
+    "TrustStrip": {
+        "insured": "Asegurados",
+        "background": "Personal con antecedentes verificados",
+        "compliant": "Conforme al decreto / CNESST",
+        "bilingual": "Trilingüe (FR/EN/ES)",
+        "serving": "Al servicio del Gran Montreal"
     },
     "Navbar": {
         "services": "Servicios",
@@ -55,7 +69,7 @@
         "hero_title": "Sobre RBA",
         "hero_subtitle": "Construido en",
         "hero_highlight": "confianza.",
-        "hero_desc": "RBA Commercial Services es una empresa de limpieza comercial con sede en Montreal, comprometida con un servicio confiable y de alta calidad para oficinas, clínicas, comercios y propiedades comerciales en todo Canadá.",
+        "hero_desc": "RBA Commercial Services es una empresa de limpieza comercial con sede en Montreal, comprometida con un servicio confiable y de alta calidad para oficinas, clínicas, comercios y propiedades comerciales en todo el Gran Montreal.",
         "story_label": "Nuestra historia",
         "story_title_part1": "Un enfoque nuevo para la",
         "story_title_part2": "limpieza comercial.",
@@ -290,7 +304,7 @@
         ]
     },
     "Footer": {
-        "description": "La elección de Canadá para la limpieza comercial profesional. Excelencia en cada rincón, fiabilidad en cada visita.",
+        "description": "Con orgullo al servicio del Gran Montreal. Excelencia en cada rincón, fiabilidad en cada visita.",
         "headings": {
             "services": "Servicios",
             "company": "Empresa",

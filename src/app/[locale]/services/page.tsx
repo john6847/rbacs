@@ -185,10 +185,10 @@ export default function Services() {
                     <div className="max-w-[1800px] mx-auto relative z-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-12">
                         <div>
                             <h2 className="serif-display text-5xl md:text-7xl italic font-light mb-6">
-                                Ready for <span className="text-white/40">the elite?</span>
+                                Ready for <span className="text-white/40">a cleaner standard?</span>
                             </h2>
                             <p className="text-xl md:text-2xl font-light opacity-80 max-w-xl">
-                                Join the roster of Canada&apos;s most prestigious corporate environments.
+                                Keeping offices, clinics and commercial spaces across Greater Montréal spotless and compliant.
                             </p>
                         </div>
                         <Link
