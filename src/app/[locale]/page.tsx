@@ -14,12 +14,27 @@ export default function Home() {
     const tNextSteps = useTranslations('NextSteps');
     const tHowItWorks = useTranslations('HowItWorks');
     const tServices = useTranslations('Services');
+    const tPromise = useTranslations('Promise');
+    const tFounder = useTranslations('Founder');
+    const tTrust = useTranslations('TrustStrip');
 
     const processSteps = [
         { key: '1', icon: 'manage_search' },
         { key: '2', icon: 'assignment' },
         { key: '3', icon: 'cleaning_services' },
         { key: '4', icon: 'verified' },
+    ] as const;
+
+    // Task 3 — verifiable commitments (copy lives in WhyUs.items)
+    const commitments = ['crew', 'checklist', 'insured', 'owner', 'reclean'] as const;
+
+    // Task 6 — trust strip badges (labels live in TrustStrip)
+    const trustItems = [
+        { key: 'insured', icon: 'verified_user' },
+        { key: 'background', icon: 'how_to_reg' },
+        { key: 'compliant', icon: 'gpp_good' },
+        { key: 'bilingual', icon: 'language' },
+        { key: 'serving', icon: 'location_on' },
     ] as const;
 
     const containerRef = useRef<HTMLDivElement>(null);
@@ -52,10 +67,10 @@ export default function Home() {
                                 initial={{ y: 100, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98], delay: 0.4 }}
-                                className="text-white text-5xl md:text-[6.5rem] font-extrabold leading-[0.85] tracking-tighter"
+                                className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.08] tracking-tight max-w-5xl mx-auto"
                             >
-                                {tHero('title_part1')} <br />
-                                <span className="italic-serif font-light text-accent-blue">{tHero('title_part2')}</span>
+                                {tHero('title_part1')}{' '}
+                                <span className="italic-serif font-light">{tHero('title_part2')}</span>
                             </motion.h1>
                         </div>
                         <FadeIn delay={0.8} isActive={true}>
@@ -75,7 +90,19 @@ export default function Home() {
 
 
 
-                {/* Benefits Showcases (Why Us) */}
+                {/* Task 5 — 30-day risk-reversal guarantee band */}
+                <section className="bg-primary text-white py-10 px-8">
+                    <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-center text-center gap-x-6 gap-y-3">
+                        <div className="flex items-center gap-3">
+                            <span className="material-symbols-outlined text-accent-gold">verified</span>
+                            <h2 className="text-lg md:text-xl font-bold tracking-tight">{tPromise('heading')}</h2>
+                        </div>
+                        <span className="hidden md:block w-px h-6 bg-white/20"></span>
+                        <p className="text-white/80 text-sm md:text-base font-light max-w-2xl">{tPromise('body')}</p>
+                    </div>
+                </section>
+
+                {/* What you actually get (Why Us) */}
                 <section className="py-20 px-8 bg-rba-gray">
                     <div className="max-w-[1800px] mx-auto">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
@@ -96,23 +123,38 @@ export default function Home() {
                                     </div>
                                 </FadeIn>
                             </div>
-                            <div className="lg:col-span-7 grid gap-16">
-                                <FadeIn delay={0.2}>
-                                    <div className="group border-t border-slate-200 pt-10 hover:border-primary transition-colors duration-300">
-                                        <span className="text-accent-gold text-xs font-bold mb-4 block">01</span>
-                                        <h3 className="text-2xl font-bold mb-4 text-slate-900 group-hover:text-primary transition-colors">{tWhyUs('items.support.title')}</h3>
-                                        <p className="text-slate-500 mb-8 max-w-md font-light leading-relaxed">{tWhyUs('items.support.desc')}</p>
-                                    </div>
-                                </FadeIn>
-                                <FadeIn delay={0.4}>
-                                    <div className="group border-t border-slate-200 pt-10 hover:border-primary transition-colors duration-300">
-                                        <span className="text-accent-gold text-xs font-bold mb-4 block">02</span>
-                                        <h3 className="text-2xl font-bold mb-4 text-slate-900 group-hover:text-primary transition-colors">{tWhyUs('items.expert.title')}</h3>
-                                        <p className="text-slate-500 mb-8 max-w-md font-light leading-relaxed">{tWhyUs('items.expert.desc')}</p>
-                                    </div>
-                                </FadeIn>
+                            <div className="lg:col-span-7 grid gap-10">
+                                {commitments.map((key, index) => (
+                                    <FadeIn key={key} delay={0.1 * (index + 1)}>
+                                        <div className="group flex gap-6 border-t border-slate-200 pt-8 hover:border-primary transition-colors duration-300">
+                                            <span className="text-accent-gold text-sm font-bold pt-1 flex-shrink-0">{String(index + 1).padStart(2, '0')}</span>
+                                            <p className="text-lg md:text-xl font-medium text-slate-800 max-w-xl leading-snug group-hover:text-primary transition-colors">{tWhyUs(`items.${key}`)}</p>
+                                        </div>
+                                    </FadeIn>
+                                ))}
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                {/* Task 4 — Who's behind RBA (founder trust section) */}
+                <section className="py-24 md:py-32 px-8 bg-white border-y border-slate-100">
+                    <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <FadeIn direction="right">
+                            <img
+                                src="/ceo.png"
+                                alt="Ketya Ridore, Founder of RBA Commercial Services"
+                                className="w-full max-w-md aspect-square object-cover rounded-2xl shadow-xl"
+                            />
+                        </FadeIn>
+                        <FadeIn delay={0.2}>
+                            <div>
+                                <span className="text-xs font-bold uppercase tracking-[0.3em] text-primary mb-4 block">{tFounder('eyebrow')}</span>
+                                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter text-slate-900 mb-8 leading-tight">{tFounder('heading')}</h2>
+                                <p className="text-lg text-slate-500 font-light leading-relaxed mb-6">{tFounder('body')}</p>
+                                <p className="text-lg font-bold text-slate-900">{tFounder('signature')}</p>
+                            </div>
+                        </FadeIn>
                     </div>
                 </section>
 
@@ -221,6 +263,20 @@ export default function Home() {
                     </div>
                 </section>
 
+                {/* Task 6 — trust strip */}
+                <section className="bg-white border-t border-slate-100 py-8 px-8">
+                    <div className="max-w-[1400px] mx-auto flex flex-wrap items-center justify-center gap-x-7 gap-y-4">
+                        {trustItems.map(({ key, icon }, i) => (
+                            <React.Fragment key={key}>
+                                {i > 0 && <span className="hidden md:block w-1 h-1 rounded-full bg-slate-300"></span>}
+                                <div className="flex items-center gap-2 text-slate-600">
+                                    <span className="material-symbols-outlined text-primary text-lg">{icon}</span>
+                                    <span className="text-xs font-bold uppercase tracking-wider">{tTrust(key)}</span>
+                                </div>
+                            </React.Fragment>
+                        ))}
+                    </div>
+                </section>
             </main>
             <Footer />
         </>

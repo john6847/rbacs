@@ -31,6 +31,9 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
+// Google Analytics measurement ID (override per-environment with NEXT_PUBLIC_GA_ID).
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-QKEVEMCHJM';
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
@@ -102,6 +105,19 @@ export default async function RootLayout({
           data-widget-id="6a287526f1441b3a2c885037"
           strategy="afterInteractive"
         />
+        {/* Google Analytics (gtag.js) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );

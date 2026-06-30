@@ -1,26 +1,23 @@
 {
     "Hero": {
-        "subtitle": "Nettoyage commercial professionnel de confiance",
-        "title_part1": "FIABILITÉ",
-        "title_part2": "Constante.",
-        "description": "RBA Commercial Services offre des solutions de nettoyage fiables et de haute qualité pour les bureaux, cliniques, commerces et propriétés commerciales partout au Canada.",
-        "cta": "Obtenir une soumission gratuite"
+        "subtitle": "Grand Montréal",
+        "title_part1": "Un entretien commercial que vous pouvez vérifier,",
+        "title_part2": "pas seulement promettre.",
+        "description": "Des équipes assurées, avec antécédents vérifiés et conformes au décret, pour les bureaux, cliniques et espaces commerciaux du Grand Montréal — avec une liste de contrôle écrite et une preuve à chaque visite. La même équipe, à chaque fois. Aucune surprise, aucune responsabilité pour vous.",
+        "cta": "Réservez une visite gratuite de 15 minutes"
     },
     "WhyUs": {
-        "subtitle": "Reconnu par les leaders de l'industrie",
-        "title_part1": "Pourquoi Nous",
-        "title_part2": "Choisir",
-        "description": "Chez RBA Commercial Services, nous croyons qu'un lieu de travail propre reflète votre professionnalisme via un personnel formé, des résultats constants et une attention aux détails.",
-        "cta": "En Savoir Plus",
+        "subtitle": "Nos engagements",
+        "title_part1": "Ce que vous obtenez",
+        "title_part2": "concrètement",
+        "description": "Pas de promesses vagues — seulement des engagements précis, mis par écrit et respectés à chaque visite.",
+        "cta": "Voir nos services",
         "items": {
-            "support": {
-                "title": "Priorité 24/7",
-                "desc": "Équipe d'intervention rapide disponible 24h/24 pour gérer les urgences sans interruption."
-            },
-            "expert": {
-                "title": "Personnel Expert",
-                "desc": "Vérifications rigoureuses des antécédents et formation continue pour les exigences de haute sécurité."
-            }
+            "crew": "La même équipe à chaque visite — jamais d'inconnus différents dans vos locaux.",
+            "checklist": "Une liste de contrôle numérique écrite, validée après chaque entretien.",
+            "insured": "Entièrement assurés et conformes au décret de l'entretien d'édifices publics (CNESST / CPEEP) — nous ne devenons jamais votre responsabilité.",
+            "owner": "Une ligne directe avec le propriétaire, pas un centre d'appels.",
+            "reclean": "On a manqué quelque chose? On le renettoie sous 24 h, gratuitement."
         }
     },
     "NextSteps": {
@@ -28,7 +25,7 @@
         "headline": "PRÊT pour un",
         "headline_highlight": "Nouveau",
         "headline_end": "DÉPART ?",
-        "description": "Parlez à un spécialiste aujourd'hui. Nous offrons des prix compétitifs et des horaires flexibles.",
+        "description": "Parlez à un spécialiste aujourd'hui. Nous offrons des prix compétitifs et des horaires flexibles partout dans le Grand Montréal.",
         "call": "Appelez-nous",
         "email": "Envoyez-nous un courriel",
         "form": {
@@ -40,6 +37,23 @@
             "facility_label": "Type d'installation",
             "submit": "Envoyer la demande"
         }
+    },
+    "Promise": {
+        "heading": "La garantie 30 jours, sans risque",
+        "body": "Essayez-nous pendant 30 jours. Si nous manquons quelque chose, nous le corrigeons gratuitement. Pas satisfait? Vous partez — sans pénalité, sans contrat piège."
+    },
+    "Founder": {
+        "eyebrow": "Notre fondateur",
+        "heading": "Qui est derrière RBA Commercial Services",
+        "body": "RBA est né parce que j'en avais assez de voir des immeubles mal desservis par des nettoyeurs qui bâclent le travail et disparaissent. Chez nous, c'est différent : les mêmes personnes, le même standard, à chaque visite — et j'y engage mon nom.",
+        "signature": "— Ketya Ridore, Fondatrice"
+    },
+    "TrustStrip": {
+        "insured": "Assurés",
+        "background": "Personnel aux antécédents vérifiés",
+        "compliant": "Conforme au décret / CNESST",
+        "bilingual": "Trilingue (FR/EN/ES)",
+        "serving": "Au service du Grand Montréal"
     },
     "Navbar": {
         "services": "Services",
@@ -55,7 +69,7 @@
         "hero_title": "À propos de RBA",
         "hero_subtitle": "Bâti sur la",
         "hero_highlight": "confiance.",
-        "hero_desc": "RBA Commercial Services est une entreprise de nettoyage commercial basée à Montréal, engagée à offrir un service fiable et de haute qualité pour les bureaux, cliniques, commerces et propriétés commerciales à travers le Canada.",
+        "hero_desc": "RBA Commercial Services est une entreprise de nettoyage commercial basée à Montréal, engagée à offrir un service fiable et de haute qualité pour les bureaux, cliniques, commerces et propriétés commerciales partout dans le Grand Montréal.",
         "story_label": "Notre histoire",
         "story_title_part1": "Une nouvelle approche du",
         "story_title_part2": "nettoyage commercial.",
@@ -290,7 +304,7 @@
         ]
     },
     "Footer": {
-        "description": "Le choix du Canada pour un nettoyage commercial professionnel. L'excellence dans chaque coin, la fiabilité à chaque visite.",
+        "description": "Fièrement au service du Grand Montréal. L'excellence dans chaque recoin, la fiabilité à chaque visite.",
         "headings": {
             "services": "Services",
             "company": "Entreprise",

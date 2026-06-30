@@ -1,26 +1,23 @@
 {
     "Hero": {
-        "subtitle": "Professional Services",
-        "title_part1": "Commercial Cleaning",
-        "title_part2": "You Can Trust",
-        "description": "RBA Commercial Services delivers reliable, high-quality cleaning solutions for offices, clinics, retail spaces, and commercial properties across Canada.",
-        "cta": "Get a Free Quote"
+        "subtitle": "Greater Montréal",
+        "title_part1": "Commercial cleaning you can verify",
+        "title_part2": "not just trust.",
+        "description": "Insured, background-checked, décret-compliant crews for offices, clinics and commercial spaces across Greater Montréal — with a written checklist and proof of every visit. Same crew, every time. No surprises, no liability.",
+        "cta": "Book a free 15-min walkthrough"
     },
     "WhyUs": {
-        "subtitle": "Trusted By Industry Leaders",
-        "title_part1": "Why Businesses",
-        "title_part2": "Choose Us",
-        "description": "At RBA Commercial Services, we believe a clean workplace reflects your professionalism. Our trained cleaning specialists deliver consistent results, reliable scheduling, and attention to detail — every visit, every space.",
-        "cta": "Learn More",
+        "subtitle": "Our Commitments",
+        "title_part1": "What you",
+        "title_part2": "actually get",
+        "description": "No vague promises — just specific commitments we put in writing and stand behind on every visit.",
+        "cta": "See our services",
         "items": {
-            "support": {
-                "title": "Reliable Service",
-                "desc": "Detail-oriented cleaning standards with flexible scheduling to suit your needs."
-            },
-            "expert": {
-                "title": "Professional Staff",
-                "desc": "Fully insured, background-checked, and highly trained cleaning specialists."
-            }
+            "crew": "The same crew, every visit — never a rotating cast of strangers in your space.",
+            "checklist": "A written digital checklist, signed off after every clean.",
+            "insured": "Fully insured, with payroll compliant with Québec's building-maintenance décret (CNESST / CPEEP) — we never become your liability.",
+            "owner": "A direct line to the owner, not a call centre.",
+            "reclean": "Miss something? We re-clean it within 24 hours, free."
         }
     },
     "NextSteps": {
@@ -28,7 +25,7 @@
         "headline": "READY FOR A",
         "headline_highlight": "Clean",
         "headline_end": "START?",
-        "description": "Speak with a facilities specialist today. We offer competitive pricing and flexible schedules across Canada.",
+        "description": "Speak with a facilities specialist today. We offer competitive pricing and flexible schedules across Greater Montréal.",
         "call": "Call Us",
         "email": "Email Us",
         "form": {
@@ -40,6 +37,23 @@
             "facility_label": "Facility Type",
             "submit": "Send Request"
         }
+    },
+    "Promise": {
+        "heading": "The 30-day, switch-risk-free promise",
+        "body": "Try us for 30 days. If we miss anything, we fix it free. Not satisfied? Walk away — no penalty, no contract trap."
+    },
+    "Founder": {
+        "eyebrow": "Our Founder",
+        "heading": "Who's behind RBA Commercial Services",
+        "body": "RBA started because I was tired of seeing buildings let down by cleaners who cut corners and then disappeared. We do it differently: the same people, the same standard, every visit — and my name is on it.",
+        "signature": "— Ketya Ridore, Founder"
+    },
+    "TrustStrip": {
+        "insured": "Insured",
+        "background": "Background-checked crews",
+        "compliant": "Décret / CNESST compliant",
+        "bilingual": "Trilingual (FR/EN/ES)",
+        "serving": "Serving Greater Montréal"
     },
     "Navbar": {
         "services": "Services",
@@ -55,7 +69,7 @@
         "hero_title": "About RBA",
         "hero_subtitle": "Built on",
         "hero_highlight": "trust.",
-        "hero_desc": "RBA Commercial Services is a Montreal-based commercial cleaning company committed to reliable, high-quality service for offices, clinics, retail spaces, and commercial properties across Canada.",
+        "hero_desc": "RBA Commercial Services is a Montreal-based commercial cleaning company committed to reliable, high-quality service for offices, clinics, retail spaces, and commercial properties across Greater Montréal.",
         "story_label": "Our Story",
         "story_title_part1": "A fresh approach to",
         "story_title_part2": "commercial cleaning.",
@@ -290,7 +304,7 @@
         ]
     },
     "Footer": {
-        "description": "Canada's choice for professional commercial cleaning. Excellence in every corner, reliability in every visit.",
+        "description": "Proudly serving Greater Montréal. Excellence in every corner, reliability in every visit.",
         "headings": {
             "services": "Services",
             "company": "Company",
